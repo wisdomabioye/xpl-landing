@@ -174,7 +174,7 @@ export function Home() {
           >
             {featured.map((p, i) => (
               <Reveal key={p.slug} delay={i * 100}>
-                <FeaturedProjectCard project={p} />
+                <FeaturedProjectCard project={p} eager={i === 0} />
               </Reveal>
             ))}
           </div>

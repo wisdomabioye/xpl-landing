@@ -5,14 +5,27 @@ import { BrowserFrame } from "@/components/mockups/BrowserFrame";
 import { PhoneFrame } from "@/components/mockups/PhoneFrame";
 import type { Project } from "@/config/content";
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project, eager = false }: { project: Project; eager?: boolean }) {
   return (
     <Card style={{ padding: 0, overflow: "hidden", display: "flex", flexDirection: "column" }}>
       <div style={{ padding: 16, paddingBottom: 0, background: "rgba(255,255,255,0.01)" }}>
         {project.kind === "browser" ? (
-          <BrowserFrame title={project.domain} height={200} caption={`// ${project.slug}`} />
+          <BrowserFrame
+            title={project.domain}
+            height={200}
+            caption={`// ${project.slug}`}
+            image={project.image}
+            imageAlt={`${project.name} — ${project.description}`}
+            eager={eager}
+          />
         ) : (
-          <PhoneFrame caption={`// ${project.slug}`} height={240} />
+          <PhoneFrame
+            caption={`// ${project.slug}`}
+            height={240}
+            image={project.image}
+            imageAlt={`${project.name} — ${project.description}`}
+            eager={eager}
+          />
         )}
       </div>
       <div style={{ padding: 24, display: "flex", flexDirection: "column", gap: 12, flex: 1 }}>

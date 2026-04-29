@@ -5,6 +5,9 @@ interface Props {
   caption?: string;
   height?: number;
   children?: ReactNode;
+  image?: string;
+  imageAlt?: string;
+  eager?: boolean;
 }
 
 export function BrowserFrame({
@@ -12,6 +15,9 @@ export function BrowserFrame({
   caption,
   height = 280,
   children,
+  image,
+  imageAlt,
+  eager = false,
 }: Props) {
   return (
     <div
@@ -57,24 +63,42 @@ export function BrowserFrame({
         style={{
           position: "relative",
           height,
-          background:
-            "repeating-linear-gradient(135deg, rgba(251,146,60,0.05) 0 1px, transparent 1px 14px), var(--color-mockup-bg)",
+          overflow: "hidden",
+          background: image
+            ? "var(--color-mockup-bg)"
+            : "repeating-linear-gradient(135deg, rgba(251,146,60,0.05) 0 1px, transparent 1px 14px), var(--color-mockup-bg)",
           display: "grid",
           placeItems: "center",
         }}
       >
-        {children ?? (
-          <div
+        {image ? (
+          <img
+            src={image}
+            alt={imageAlt ?? title}
+            loading={eager ? "eager" : "lazy"}
+            decoding="async"
             style={{
-              fontFamily: "var(--font-mono)",
-              fontSize: 10,
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-              color: "var(--color-muted-2)",
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "top center",
+              display: "block",
             }}
-          >
-            {caption ?? "// project mockup"}
-          </div>
+          />
+        ) : (
+          children ?? (
+            <div
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: 10,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                color: "var(--color-muted-2)",
+              }}
+            >
+              {caption ?? "// project mockup"}
+            </div>
+          )
         )}
       </div>
     </div>

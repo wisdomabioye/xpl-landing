@@ -77,7 +77,7 @@ export function Portfolio() {
           >
             {filtered.map((p, i) => (
               <Reveal key={p.slug} delay={Math.min(i * 60, 360)}>
-                <ProjectCard project={p} />
+                <ProjectCard project={p} eager={i < 2} />
               </Reveal>
             ))}
           </div>

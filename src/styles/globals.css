@@ -247,10 +247,25 @@ body::before {
 .textarea { resize: vertical; min-height: 132px; font-family: var(--font-sans); }
 .select {
   appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%239ca3af' fill='none' stroke-width='1.5'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%23b8a896' fill='none' stroke-width='1.5'/></svg>");
   background-repeat: no-repeat;
   background-position: right 16px center;
   padding-right: 40px;
+  color-scheme: dark;
+}
+.select option {
+  background: var(--color-bg-card);
+  color: var(--color-text);
+  padding: 8px;
+}
+.select option:checked,
+.select option:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+.select:invalid,
+.select option[value=""] {
+  color: var(--color-muted-2);
 }
 .field-label {
   display: block;

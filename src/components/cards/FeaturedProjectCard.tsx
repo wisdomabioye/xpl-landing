@@ -6,14 +6,27 @@ import { PhoneFrame } from "@/components/mockups/PhoneFrame";
 import { Link } from "react-router-dom";
 import type { Project } from "@/config/content";
 
-export function FeaturedProjectCard({ project }: { project: Project }) {
+export function FeaturedProjectCard({ project, eager = false }: { project: Project; eager?: boolean }) {
   return (
     <Card style={{ padding: 0, overflow: "hidden" }}>
       <div style={{ padding: 16, paddingBottom: 0 }}>
         {project.kind === "browser" ? (
-          <BrowserFrame title={project.domain} height={200} caption={`// ${project.slug}`} />
+          <BrowserFrame
+            title={project.domain}
+            height={200}
+            caption={`// ${project.slug}`}
+            image={project.image}
+            imageAlt={`${project.name} — ${project.description}`}
+            eager={eager}
+          />
         ) : (
-          <PhoneFrame caption={`// ${project.slug}`} height={260} />
+          <PhoneFrame
+            caption={`// ${project.slug}`}
+            height={260}
+            image={project.image}
+            imageAlt={`${project.name} — ${project.description}`}
+            eager={eager}
+          />
         )}
       </div>
       <div style={{ padding: 24, display: "flex", flexDirection: "column", gap: 8 }}>
