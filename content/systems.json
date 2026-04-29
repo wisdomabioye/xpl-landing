@@ -14,7 +14,7 @@
       "dashboard": null,
       "mobile": null
     },
-    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/velocity",
+    "repoUrl": "https://github.com/xpl-dev/xpl-templates/tree/main/velocity",
     "briefPath": "01_Velocity_Design_Brief.md",
     "moodReferences": ["Linear.app", "Vercel.com", "Stripe.com", "Resend.com", "Clerk.com"]
   },
@@ -33,7 +33,7 @@
       "dashboard": null,
       "mobile": null
     },
-    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/cockpit",
+    "repoUrl": "https://github.com/xpl-dev/xpl-templates/tree/main/cockpit",
     "briefPath": "02_Cockpit_Design_Brief.md",
     "moodReferences": ["Linear app", "Stripe Dashboard", "Notion", "Vercel Dashboard", "Plane"]
   },
@@ -52,7 +52,7 @@
       "dashboard": null,
       "mobile": null
     },
-    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/pocket",
+    "repoUrl": "https://github.com/xpl-dev/xpl-templates/tree/main/pocket",
     "briefPath": "03_Pocket_Design_Brief.md",
     "moodReferences": ["Cash App", "Notion mobile", "Headspace", "Duolingo", "Linear Mobile"]
   },
@@ -71,7 +71,7 @@
       "dashboard": null,
       "mobile": null
     },
-    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/vault",
+    "repoUrl": "https://github.com/xpl-dev/xpl-templates/tree/main/vault",
     "briefPath": "04_Vault_Design_Brief.md",
     "moodReferences": ["Cash App", "Revolut", "Mercury", "Wise", "Stripe Treasury"]
   },
@@ -90,7 +90,7 @@
       "dashboard": null,
       "mobile": null
     },
-    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/market",
+    "repoUrl": "https://github.com/xpl-dev/xpl-templates/tree/main/market",
     "briefPath": "05_Market_Design_Brief.md",
     "moodReferences": ["Allbirds", "Glossier", "Etsy", "Konga", "Selar"]
   },
@@ -109,7 +109,7 @@
       "dashboard": null,
       "mobile": null
     },
-    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/chain",
+    "repoUrl": "https://github.com/xpl-dev/xpl-templates/tree/main/chain",
     "briefPath": "06_Chain_Design_Brief.md",
     "moodReferences": ["Uniswap", "Phantom", "Magic Eden", "Jupiter", "Aave"]
   }

@@ -24,7 +24,7 @@ type AppKey = "marketing" | "dashboard" | "mobile";
 const appLabels: Record<AppKey, { title: string; subtitle: string }> = {
   marketing: { title: "Marketing", subtitle: "Public-facing site" },
   dashboard: { title: "Dashboard", subtitle: "Logged-in app surface" },
-  mobile: { title: "Mobile", subtitle: "Native iOS + Android" },
+  mobile: { title: "Mobile", subtitle: "Mobile-first web · phone viewport" },
 };
 
 export function SystemShowcase() {
@@ -233,7 +233,7 @@ export function SystemShowcase() {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  npx degit xpldevelopers/xpl-templates/{system.slug} my-app
+                  npx degit xpl-dev/xpl-templates/{system.slug} my-app
                 </code>
                 <a
                   href={system.repoUrl}
