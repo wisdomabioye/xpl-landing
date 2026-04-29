@@ -1,72 +1,62 @@
 [
   {
-    "slug": "ledgerlight",
-    "name": "Ledgerlight",
-    "category": "Web3",
-    "kind": "browser",
-    "domain": "app.ledgerlight.xyz",
-    "description": "Cross-chain treasury dashboard for DAOs managing eight-figure portfolios.",
-    "stack": ["Solana", "Anchor", "React", "tRPC"],
-    "year": "2025"
-  },
-  {
-    "slug": "kuda-logistics",
-    "name": "Kuda Logistics",
+    "slug": "tenda",
+    "name": "Tenda",
     "category": "Mobile",
     "kind": "phone",
-    "domain": "Kuda Driver",
-    "description": "Last-mile delivery operator app — 4,000 active drivers across two cities.",
-    "stack": ["React Native", "Expo", "Mapbox"],
-    "year": "2024"
+    "domain": "tendahq.com",
+    "description": "Trustless mobile-first micro-task gig and p2p marketplace on Solana. Workers and posters transact through on-chain escrow",
+    "stack": ["Solana", "Anchor", "React-Native"],
+    "year": "2026"
   },
   {
-    "slug": "stitchworks-cms",
-    "name": "Stitchworks CMS",
-    "category": "Web",
+    "slug": "fairdrop",
+    "name": "Fairdrop",
+    "category": "Web3",
     "kind": "browser",
-    "domain": "studio.stitchworks.io",
-    "description": "Editorial platform powering 14 publications, 800k monthly readers.",
-    "stack": ["Next.js", "Postgres", "Algolia"],
+    "domain": "usefairdrop.xyz",
+    "description": "Privacy-preserving token launches and capital formation on Blockchain",
+    "stack": ["Vite", "Fastify", "Postgres"],
+    "year": "2026"
+  },
+  {
+    "slug": "adorbitals",
+    "name": "Adorbitals",
+    "category": "Web3",
+    "kind": "browser",
+    "domain": "adors.org",
+    "description": "Create, trade, and manage NFTs with advanced Alkane smart contracts and DeFi capabilities",
+    "stack": ["Next.js", "Bitcoin", "Alkane"],
     "year": "2025"
   },
   {
-    "slug": "halo-health",
-    "name": "Halo Health",
-    "category": "Mobile",
-    "kind": "phone",
-    "domain": "Halo",
-    "description": "Patient-side telemedicine app integrated with three hospital networks.",
-    "stack": ["React Native", "WebRTC", "FHIR"],
-    "year": "2024"
-  },
-  {
-    "slug": "yieldframe",
-    "name": "Yieldframe",
-    "category": "Web3",
-    "kind": "browser",
-    "domain": "yieldframe.xyz",
-    "description": "DeFi yield aggregator routing across Solana liquidity pools.",
-    "stack": ["Solana", "Rust", "Next.js"],
-    "year": "2025"
-  },
-  {
-    "slug": "northbeam-admin",
-    "name": "Northbeam Admin",
+    "slug": "docket",
+    "name": "Docket",
     "category": "Web",
     "kind": "browser",
-    "domain": "admin.northbeam.co",
-    "description": "B2B operations console for an international logistics network.",
-    "stack": ["React", "GraphQL", "Postgres"],
-    "year": "2024"
+    "domain": "trydocket.com",
+    "description": "AI-powered case prep for U.S. immigration attorneys",
+    "stack": ["Next.js", "tRPC", "Perplexity"],
+    "year": "2026"
   },
   {
-    "slug": "trove-wallet",
-    "name": "Trove Wallet",
+    "slug": "etfpulse",
+    "name": "Etfpulse",
     "category": "Web3",
-    "kind": "phone",
-    "domain": "Trove",
-    "description": "Mobile-first multi-chain wallet — Solana, EVM, and Bitcoin from one app.",
-    "stack": ["React Native", "Solana", "Viem"],
+    "kind": "browser",
+    "domain": "etfpulse.vercel.app",
+    "description": "Crypto ETF flow signals. AI-explained. Delivered to Telegram.",
+    "stack": ["Python", "FastAPI", "OpenRouter"],
+    "year": "2026"
+  },
+  {
+    "slug": "5 star",
+    "name": "5 Star",
+    "category": "Web",
+    "kind": "browser",
+    "domain": "5startransport.com.ng/",
+    "description": "A leader in eco-friendly fleet management and urban transportation",
+    "stack": ["Next.js", "React-Native", "GraphQL"],
     "year": "2025"
   }
 ]
