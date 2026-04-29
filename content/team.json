@@ -1,8 +1,7 @@
 [
-  { "name": "Ada O.", "role": "Founder · Engineering" },
-  { "name": "Ifeanyi K.", "role": "Lead Engineer · Web3" },
-  { "name": "Tomiwa A.", "role": "Mobile Lead" },
-  { "name": "Chiamaka B.", "role": "Design Director" },
-  { "name": "Daniel U.", "role": "Backend Architect" },
-  { "name": "Position open", "role": "Senior Frontend" }
+  { "name": "Abioye A.", "role": "Founder · Engineering" },
+  { "name": "Wisdom O.", "role": "Lead Engineer · Web3" },
+  { "name": "Akolade A.", "role": "Backend Architect" },
+  { "name": "Bolarin A.", "role": "Design Director" },
+  { "name": "Daniel U.", "role": "Mobile Architect" }
 ]
