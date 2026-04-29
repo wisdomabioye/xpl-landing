@@ -1,0 +1,7 @@
+[
+  { "number": "01", "title": "Discovery", "description": "Workshops, scoping, technical due diligence." },
+  { "number": "02", "title": "Design", "description": "Wireframes, prototypes, system tokens." },
+  { "number": "03", "title": "Build", "description": "Two-week sprints, weekly demos, daily ship." },
+  { "number": "04", "title": "Test", "description": "QA, accessibility, performance, security." },
+  { "number": "05", "title": "Launch", "description": "Deploy, monitor, hand-off — or stay on retainer." }
+]

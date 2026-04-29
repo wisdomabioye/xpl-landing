@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="XPL Developers — a software agency engineering web, mobile, and Web3 products to the world. We Build. You Scale." />
+    <meta property="og:title" content="XPL Developers — We Build. You Scale." />
+    <meta property="og:description" content="A software agency engineering web, mobile, and Web3 products for ambitious teams." />
+    <meta property="og:type" content="website" />
+    <title>XPL Developers — We Build. You Scale.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet" />
+
+    <style>
+      html, body { margin: 0; padding: 0; background: #1a0f08; color: #fff; }
+      #boot {
+        position: fixed; inset: 0;
+        background: #1a0f08;
+        display: flex; align-items: center; justify-content: center;
+        z-index: 100;
+        color: #fb923c;
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 11px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        transition: opacity 360ms ease;
+      }
+      #boot.fade-out { opacity: 0; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="boot">Initializing</div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "ledgerlight",
+    "name": "Ledgerlight",
+    "category": "Web3",
+    "kind": "browser",
+    "domain": "app.ledgerlight.xyz",
+    "description": "Cross-chain treasury dashboard for DAOs managing eight-figure portfolios.",
+    "stack": ["Solana", "Anchor", "React", "tRPC"],
+    "year": "2025"
+  },
+  {
+    "slug": "kuda-logistics",
+    "name": "Kuda Logistics",
+    "category": "Mobile",
+    "kind": "phone",
+    "domain": "Kuda Driver",
+    "description": "Last-mile delivery operator app — 4,000 active drivers across two cities.",
+    "stack": ["React Native", "Expo", "Mapbox"],
+    "year": "2024"
+  },
+  {
+    "slug": "stitchworks-cms",
+    "name": "Stitchworks CMS",
+    "category": "Web",
+    "kind": "browser",
+    "domain": "studio.stitchworks.io",
+    "description": "Editorial platform powering 14 publications, 800k monthly readers.",
+    "stack": ["Next.js", "Postgres", "Algolia"],
+    "year": "2025"
+  },
+  {
+    "slug": "halo-health",
+    "name": "Halo Health",
+    "category": "Mobile",
+    "kind": "phone",
+    "domain": "Halo",
+    "description": "Patient-side telemedicine app integrated with three hospital networks.",
+    "stack": ["React Native", "WebRTC", "FHIR"],
+    "year": "2024"
+  },
+  {
+    "slug": "yieldframe",
+    "name": "Yieldframe",
+    "category": "Web3",
+    "kind": "browser",
+    "domain": "yieldframe.xyz",
+    "description": "DeFi yield aggregator routing across Solana liquidity pools.",
+    "stack": ["Solana", "Rust", "Next.js"],
+    "year": "2025"
+  },
+  {
+    "slug": "northbeam-admin",
+    "name": "Northbeam Admin",
+    "category": "Web",
+    "kind": "browser",
+    "domain": "admin.northbeam.co",
+    "description": "B2B operations console for an international logistics network.",
+    "stack": ["React", "GraphQL", "Postgres"],
+    "year": "2024"
+  },
+  {
+    "slug": "trove-wallet",
+    "name": "Trove Wallet",
+    "category": "Web3",
+    "kind": "phone",
+    "domain": "Trove",
+    "description": "Mobile-first multi-chain wallet — Solana, EVM, and Bitcoin from one app.",
+    "stack": ["React Native", "Solana", "Viem"],
+    "year": "2025"
+  }
+]

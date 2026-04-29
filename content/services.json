@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "web-apps",
+    "number": "01",
+    "name": "Web apps",
+    "icon": "code",
+    "shortDesc": "React, Next.js, TypeScript — SPAs, dashboards, SaaS.",
+    "stack": "React · Next.js · TypeScript · Tailwind · Vite",
+    "description": "Single-page apps, complex dashboards, and SaaS platforms built for scale. We architect for performance from day one — Core Web Vitals are not an afterthought.",
+    "bullets": [
+      "Marketing sites & SEO",
+      "B2B dashboards & admin panels",
+      "SaaS platforms",
+      "Customer portals"
+    ]
+  },
+  {
+    "slug": "mobile-apps",
+    "number": "02",
+    "name": "Mobile apps",
+    "icon": "smartphone",
+    "shortDesc": "React Native — iOS and Android, cross-platform.",
+    "stack": "React Native · Expo · iOS · Android · Firebase",
+    "description": "One codebase, two app stores. Native performance with a shared engineering team — your roadmap moves twice as fast.",
+    "bullets": [
+      "Cross-platform iOS + Android",
+      "Native modules where it matters",
+      "Push, payments, deeplinks",
+      "Offline-first patterns"
+    ]
+  },
+  {
+    "slug": "backend",
+    "number": "03",
+    "name": "Backend & API",
+    "icon": "server",
+    "shortDesc": "Node.js, REST, GraphQL — scalable server-side systems.",
+    "stack": "Node.js · Postgres · Redis · GraphQL · gRPC",
+    "description": "Scalable server-side systems that survive traffic spikes and audit-grade reviews. Boring tech, ruthlessly applied.",
+    "bullets": [
+      "REST and GraphQL APIs",
+      "Event-driven architectures",
+      "Data modelling & migrations",
+      "Observability & SLOs"
+    ]
+  },
+  {
+    "slug": "web3",
+    "number": "04",
+    "name": "Web3 & Blockchain",
+    "icon": "box",
+    "shortDesc": "Solana, EVM, Bitcoin — smart contracts, DeFi, dApps.",
+    "stack": "Solana · EVM · Bitcoin · Solidity · Anchor · Foundry",
+    "description": "Smart contracts, DeFi protocols, and dApps. We have shipped on three chains and we know which one is right for your use case.",
+    "bullets": [
+      "Smart contract development",
+      "DeFi & yield protocols",
+      "Wallet integrations",
+      "Audit prep & remediation"
+    ]
+  },
+  {
+    "slug": "design",
+    "number": "05",
+    "name": "UI/UX Design",
+    "icon": "palette",
+    "shortDesc": "Wireframes, prototypes, and design systems engineers can ship.",
+    "stack": "Figma · Design systems · Prototypes · Tokens",
+    "description": "Wireframes, prototypes, and full design systems that the engineering team can actually build. Designers who ship.",
+    "bullets": [
+      "Discovery & wireframing",
+      "Hi-fi prototypes",
+      "Design systems & tokens",
+      "Usability testing"
+    ]
+  },
+  {
+    "slug": "support",
+    "number": "06",
+    "name": "Maintenance & Support",
+    "icon": "wrench",
+    "shortDesc": "Retainer-based support for live products.",
+    "stack": "Retainers · SLA · On-call · Roadmap",
+    "description": "Ongoing retainer-based support for live products. Bug fixes, feature work, and a phone number that always picks up.",
+    "bullets": [
+      "Monthly retainers",
+      "On-call for incidents",
+      "Quarterly roadmap reviews",
+      "Performance monitoring"
+    ]
+  }
+]

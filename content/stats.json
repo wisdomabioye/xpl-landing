@@ -1,0 +1,25 @@
+{
+  "hero": [
+    { "value": "50+", "label": "products shipped" },
+    { "value": "4", "label": "countries delivered" },
+    { "value": "6", "label": "engineering disciplines" },
+    { "value": "WB·YS", "label": "operating principle" }
+  ],
+  "why": [
+    {
+      "value": "98%",
+      "label": "On-time delivery",
+      "description": "We commit to ship dates and we hit them. Process over chaos."
+    },
+    {
+      "value": "24h",
+      "label": "Reply window",
+      "description": "Every inquiry, every Slack ping, every code review — answered inside a day."
+    },
+    {
+      "value": "9 yr",
+      "label": "Senior median",
+      "description": "No bootcamp churn. Engineers who have shipped at scale."
+    }
+  ]
+}
