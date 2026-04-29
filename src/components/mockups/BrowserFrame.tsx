@@ -16,7 +16,7 @@ export function BrowserFrame({
   return (
     <div
       style={{
-        background: "var(--color-bg-card)",
+        background: "var(--color-mockup-bg)",
         border: "1px solid rgba(255,255,255,0.08)",
         overflow: "hidden",
         width: "100%",
@@ -35,7 +35,7 @@ export function BrowserFrame({
         {[0, 1, 2].map((i) => (
           <span
             key={i}
-            style={{ width: 8, height: 8, borderRadius: 99, background: "#553623" }}
+            style={{ width: 8, height: 8, borderRadius: 99, background: "var(--color-mockup-chrome)" }}
           />
         ))}
         <div
@@ -58,7 +58,7 @@ export function BrowserFrame({
           position: "relative",
           height,
           background:
-            "repeating-linear-gradient(135deg, rgba(251,146,60,0.05) 0 1px, transparent 1px 14px), var(--color-bg)",
+            "repeating-linear-gradient(135deg, rgba(251,146,60,0.05) 0 1px, transparent 1px 14px), var(--color-mockup-bg)",
           display: "grid",
           placeItems: "center",
         }}

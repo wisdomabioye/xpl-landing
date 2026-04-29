@@ -15,7 +15,7 @@ export function PhoneFrame({
         style={{
           width: 200,
           border: "1px solid rgba(255,255,255,0.12)",
-          background: "var(--color-bg-card)",
+          background: "var(--color-mockup-bg)",
           padding: "8px 8px 14px",
           position: "relative",
         }}
@@ -24,7 +24,7 @@ export function PhoneFrame({
           style={{
             width: 60,
             height: 4,
-            background: "#553623",
+            background: "var(--color-mockup-chrome)",
             margin: "0 auto 8px",
             borderRadius: 2,
           }}
@@ -33,7 +33,7 @@ export function PhoneFrame({
           style={{
             height,
             background:
-              "repeating-linear-gradient(135deg, rgba(251,146,60,0.06) 0 1px, transparent 1px 14px), var(--color-bg)",
+              "repeating-linear-gradient(135deg, rgba(251,146,60,0.06) 0 1px, transparent 1px 14px), var(--color-mockup-bg)",
             display: "grid",
             placeItems: "center",
             position: "relative",

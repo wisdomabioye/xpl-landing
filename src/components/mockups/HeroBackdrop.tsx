@@ -55,7 +55,8 @@ export function HeroBackdrop() {
           width: 800,
           height: 800,
           transform: "translate(-50%,-30%)",
-          background: "radial-gradient(circle, rgba(120,60,20,0.55), transparent 60%)",
+          background:
+            "radial-gradient(circle, rgba(251, 146, 60, 0.22), rgba(254, 215, 170, 0.06) 35%, transparent 65%)",
           filter: "blur(40px)",
         }}
       />

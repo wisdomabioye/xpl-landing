@@ -14,7 +14,7 @@ export function TeamCard({ member }: { member: TeamMember }) {
           aspectRatio: "1/1.1",
           background: member.photo
             ? `url(${member.photo}) center/cover no-repeat`
-            : "repeating-linear-gradient(45deg, rgba(251,146,60,0.06) 0 1px, transparent 1px 12px), #2a1810",
+            : "repeating-linear-gradient(45deg, rgba(251,146,60,0.07) 0 1px, transparent 1px 12px), var(--color-bg-elev)",
           display: "grid",
           placeItems: "center",
           color: "var(--color-muted-2)",
