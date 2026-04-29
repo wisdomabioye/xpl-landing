@@ -1,0 +1,116 @@
+[
+  {
+    "slug": "velocity",
+    "name": "Velocity",
+    "aesthetic": "Warm, conversion-focused, modern minimal",
+    "audience": "SaaS, agencies, creators, course platforms",
+    "status": "planned",
+    "phase": 1,
+    "themes": ["Classic", "Bold dark", "Warm minimal", "Editorial"],
+    "componentCount": 70,
+    "screenCount": 30,
+    "demos": {
+      "marketing": null,
+      "dashboard": null,
+      "mobile": null
+    },
+    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/velocity",
+    "briefPath": "01_Velocity_Design_Brief.md",
+    "moodReferences": ["Linear.app", "Vercel.com", "Stripe.com", "Resend.com", "Clerk.com"]
+  },
+  {
+    "slug": "cockpit",
+    "name": "Cockpit",
+    "aesthetic": "Dense, technical, neutral, data-rich",
+    "audience": "Internal tools, analytics, B2B SaaS dashboards, devtools, CRMs",
+    "status": "planned",
+    "phase": 2,
+    "themes": ["Slate dark", "Slate light", "High contrast"],
+    "componentCount": 75,
+    "screenCount": 30,
+    "demos": {
+      "marketing": null,
+      "dashboard": null,
+      "mobile": null
+    },
+    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/cockpit",
+    "briefPath": "02_Cockpit_Design_Brief.md",
+    "moodReferences": ["Linear app", "Stripe Dashboard", "Notion", "Vercel Dashboard", "Plane"]
+  },
+  {
+    "slug": "pocket",
+    "name": "Pocket",
+    "aesthetic": "Soft, playful, consumer-friendly",
+    "audience": "Consumer mobile-first products, lifestyle, social, fitness, learning",
+    "status": "planned",
+    "phase": 3,
+    "themes": ["Default light", "Default dark", "Branded"],
+    "componentCount": 70,
+    "screenCount": 30,
+    "demos": {
+      "marketing": null,
+      "dashboard": null,
+      "mobile": null
+    },
+    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/pocket",
+    "briefPath": "03_Pocket_Design_Brief.md",
+    "moodReferences": ["Cash App", "Notion mobile", "Headspace", "Duolingo", "Linear Mobile"]
+  },
+  {
+    "slug": "vault",
+    "name": "Vault",
+    "aesthetic": "Premium, dark, financial, trustworthy",
+    "audience": "Fintech, wallets, payments, banking, savings, treasury",
+    "status": "planned",
+    "phase": 3,
+    "themes": ["Vault dark", "Vault light", "Branded"],
+    "componentCount": 75,
+    "screenCount": 30,
+    "demos": {
+      "marketing": null,
+      "dashboard": null,
+      "mobile": null
+    },
+    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/vault",
+    "briefPath": "04_Vault_Design_Brief.md",
+    "moodReferences": ["Cash App", "Revolut", "Mercury", "Wise", "Stripe Treasury"]
+  },
+  {
+    "slug": "market",
+    "name": "Market",
+    "aesthetic": "Vibrant, retail, conversion-driven",
+    "audience": "D2C brands, marketplaces, e-commerce, food ordering, ticketing",
+    "status": "planned",
+    "phase": 4,
+    "themes": ["Boutique", "Marketplace", "Dark", "Editorial"],
+    "componentCount": 80,
+    "screenCount": 32,
+    "demos": {
+      "marketing": null,
+      "dashboard": null,
+      "mobile": null
+    },
+    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/market",
+    "briefPath": "05_Market_Design_Brief.md",
+    "moodReferences": ["Allbirds", "Glossier", "Etsy", "Konga", "Selar"]
+  },
+  {
+    "slug": "chain",
+    "name": "Chain",
+    "aesthetic": "High-contrast, technical, web3-native",
+    "audience": "DeFi, NFT, dApps, bridges, staking, wallet UIs",
+    "status": "planned",
+    "phase": 4,
+    "themes": ["Dark vivid", "Dark muted", "Light"],
+    "componentCount": 75,
+    "screenCount": 30,
+    "demos": {
+      "marketing": null,
+      "dashboard": null,
+      "mobile": null
+    },
+    "repoUrl": "https://github.com/xpldevelopers/xpl-templates/tree/main/chain",
+    "briefPath": "06_Chain_Design_Brief.md",
+    "moodReferences": ["Uniswap", "Phantom", "Magic Eden", "Jupiter", "Aave"]
+  }
+]

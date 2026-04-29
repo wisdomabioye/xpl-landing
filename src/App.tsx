@@ -4,6 +4,7 @@ import { Home } from "@/pages/Home";
 import { About } from "@/pages/About";
 import { Services } from "@/pages/Services";
 import { Portfolio } from "@/pages/Portfolio";
+import { SystemShowcase } from "@/pages/SystemShowcase";
 import { Contact } from "@/pages/Contact";
 import { NotFound } from "@/pages/NotFound";
 
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/services", element: <Services /> },
       { path: "/portfolio", element: <Portfolio /> },
+      { path: "/systems/:slug", element: <SystemShowcase /> },
       { path: "/contact", element: <Contact /> },
       { path: "*", element: <NotFound /> },
     ],

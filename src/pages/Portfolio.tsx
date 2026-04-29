@@ -5,7 +5,8 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { FilterBar } from "@/components/sections/FilterBar";
 import { ProjectCard } from "@/components/cards/ProjectCard";
-import { projects, projectCategories, type ProjectCategory } from "@/config/content";
+import { SystemCard } from "@/components/cards/SystemCard";
+import { projects, projectCategories, systems, type ProjectCategory } from "@/config/content";
 
 type Filter = "All" | ProjectCategory;
 const filters: readonly Filter[] = ["All", ...projectCategories];
@@ -61,6 +62,57 @@ export function Portfolio() {
 
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="wrap">
+          <Reveal>
+            <div style={{ marginBottom: 28 }}>
+              <SectionLabel>Design systems</SectionLabel>
+              <h2
+                className="font-display-tight"
+                style={{ fontSize: "clamp(32px, 5vw, 56px)", margin: "12px 0 8px" }}
+              >
+                Six systems. One aesthetic each.
+              </h2>
+              <p
+                style={{
+                  color: "var(--color-muted)",
+                  fontSize: 16,
+                  maxWidth: 640,
+                  lineHeight: 1.6,
+                  margin: 0,
+                }}
+              >
+                Complete product universes — marketing site, dashboard, mobile app, and the
+                component library that powers them — each unified by its own tokens. MIT licensed.
+              </p>
+            </div>
+          </Reveal>
+
+          <div
+            style={{
+              display: "grid",
+              gap: 20,
+              gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+              marginBottom: 80,
+            }}
+          >
+            {systems.map((s, i) => (
+              <Reveal key={s.slug} delay={Math.min(i * 60, 360)}>
+                <SystemCard system={s} />
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal>
+            <div style={{ marginBottom: 28 }}>
+              <SectionLabel>Client work</SectionLabel>
+              <h2
+                className="font-display-tight"
+                style={{ fontSize: "clamp(32px, 5vw, 56px)", margin: "12px 0 8px" }}
+              >
+                Selected projects.
+              </h2>
+            </div>
+          </Reveal>
+
           <FilterBar
             options={filters}
             active={filter}

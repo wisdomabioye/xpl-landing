@@ -11,6 +11,7 @@ import teamJson from "@content/team.json";
 import processJson from "@content/process.json";
 import statsJson from "@content/stats.json";
 import budgetsJson from "@content/budgets.json";
+import systemsJson from "@content/systems.json";
 
 export type IconName =
   | "code"
@@ -93,6 +94,30 @@ export interface Budget {
   label: string;
 }
 
+export type SystemStatus = "planned" | "in-progress" | "live";
+
+export interface SystemDemos {
+  marketing: string | null;
+  dashboard: string | null;
+  mobile: string | null;
+}
+
+export interface DesignSystem {
+  slug: string;
+  name: string;
+  aesthetic: string;
+  audience: string;
+  status: SystemStatus;
+  phase: number;
+  themes: string[];
+  componentCount: number;
+  screenCount: number;
+  demos: SystemDemos;
+  repoUrl: string;
+  briefPath: string;
+  moodReferences: string[];
+}
+
 export const projects = projectsJson as readonly Project[];
 export const services = servicesJson as readonly Service[];
 export const values = valuesJson as readonly Value[];
@@ -100,5 +125,10 @@ export const team = teamJson as readonly TeamMember[];
 export const processSteps = processJson as readonly ProcessStep[];
 export const stats = statsJson as Stats;
 export const budgets = budgetsJson as readonly Budget[];
+export const systems = systemsJson as readonly DesignSystem[];
 
 export const projectCategories: ProjectCategory[] = ["Web", "Mobile", "Web3"];
+
+export function getSystemBySlug(slug: string): DesignSystem | undefined {
+  return systems.find((s) => s.slug === slug);
+}
