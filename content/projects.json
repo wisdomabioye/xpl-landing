@@ -54,9 +54,19 @@
     "name": "5 Star",
     "category": "Web",
     "kind": "browser",
-    "domain": "5startransport.com.ng/",
+    "domain": "5startransport.com.ng",
     "description": "A leader in eco-friendly fleet management and urban transportation",
     "stack": ["Next.js", "React-Native", "GraphQL"],
+    "year": "2025"
+  },
+  {
+    "slug": "revvi",
+    "name": "Revvi",
+    "category": "Mobile",
+    "kind": "phone",
+    "domain": "revvi-org.vercel.app",
+    "description": "Revvi is built on the idea that human movement and transportation are valuable economic resources",
+    "stack": ["React-Native", "Expo", "tRPC"],
     "year": "2025"
   }
 ]
