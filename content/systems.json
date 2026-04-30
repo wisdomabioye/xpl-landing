@@ -4,10 +4,10 @@
     "name": "Velocity",
     "aesthetic": "Warm, conversion-focused, modern minimal",
     "audience": "SaaS, agencies, creators, course platforms",
-    "status": "planned",
+    "status": "in-progress",
     "phase": 1,
     "themes": ["Classic", "Bold dark", "Warm minimal", "Editorial"],
-    "componentCount": 70,
+    "componentCount": 67,
     "screenCount": 30,
     "demos": {
       "marketing": null,
