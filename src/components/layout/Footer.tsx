@@ -11,6 +11,11 @@ const socialLinks: Array<{ key: keyof typeof site.social; icon: IconName; label:
   { key: "instagram", icon: "instagram", label: "Instagram" },
   { key: "tiktok", icon: "tiktok", label: "TikTok" },
 ];
+const footerNav = [
+  ...primaryNav,
+  { to: "/privacy", label: "Privacy Policy" },
+  { to: "/terms", label: "Terms" },
+];
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -39,7 +44,7 @@ export function Footer() {
                 maxWidth: 320,
               }}
             >
-              {primaryNav.map((item) => (
+              {footerNav.map((item) => (
                 <Link
                   key={item.to}
                   to={item.to}
