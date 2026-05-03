@@ -61,7 +61,7 @@ export function Home() {
                 }}
               >
                 A software agency engineering web, mobile, and Web3 products for ambitious teams.
-                Nigerian roots — available worldwide.
+                
               </p>
             </Reveal>
             <Reveal delay={320}>
