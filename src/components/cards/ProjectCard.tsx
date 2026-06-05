@@ -7,6 +7,10 @@ import { BrowserFrame } from "@/components/mockups/BrowserFrame";
 import { PhoneFrame } from "@/components/mockups/PhoneFrame";
 import type { Project, Screenshot } from "@/config/content";
 
+// Fixed preview-area height so browser and phone cards line up.
+// Frame heights are tuned so chrome + screen fits just inside the box.
+const PREVIEW_HEIGHT = 280;
+
 export function ProjectCard({ project, eager = false }: { project: Project; eager?: boolean }) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
@@ -22,28 +26,47 @@ export function ProjectCard({ project, eager = false }: { project: Project; eage
   const cover = screenshots[0];
   const hasGallery = screenshots.length > 0;
 
-  const frame =
-    project.kind === "browser" ? (
-      <BrowserFrame
-        title={project.domain}
-        height={200}
-        caption={`// ${project.slug}`}
-        image={cover?.src}
-        imageAlt={`${project.name} — ${project.description}`}
-        eager={eager}
-      />
-    ) : (
-      <PhoneFrame
-        caption={`// ${project.slug}`}
-        height={240}
-        image={cover?.src}
-        imageAlt={`${project.name} — ${project.description}`}
-        eager={eager}
-      />
-    );
+  const frame = (
+    <div
+      style={{
+        height: PREVIEW_HEIGHT,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "hidden",
+      }}
+    >
+      {project.kind === "browser" ? (
+        <BrowserFrame
+          title={project.domain}
+          height={PREVIEW_HEIGHT - 48}
+          caption={`// ${project.slug}`}
+          image={cover?.src}
+          imageAlt={`${project.name} — ${project.description}`}
+          eager={eager}
+        />
+      ) : (
+        <PhoneFrame
+          caption={`// ${project.slug}`}
+          height={PREVIEW_HEIGHT - 40}
+          image={cover?.src}
+          imageAlt={`${project.name} — ${project.description}`}
+          eager={eager}
+        />
+      )}
+    </div>
+  );
 
   return (
-    <Card style={{ padding: 0, overflow: "hidden", display: "flex", flexDirection: "column" }}>
+    <Card
+      style={{
+        padding: 0,
+        overflow: "hidden",
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+      }}
+    >
       <div style={{ padding: 16, paddingBottom: 0, background: "rgba(255,255,255,0.01)" }}>
         {hasGallery ? (
           <button

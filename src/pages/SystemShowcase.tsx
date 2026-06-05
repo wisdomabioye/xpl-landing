@@ -223,6 +223,7 @@ function DemoSlot({
         display: "flex",
         flexDirection: "column",
         minHeight: 320,
+        height: "100%",
       }}
     >
       <div
@@ -272,7 +273,7 @@ function DemoSlot({
           flex: 1,
           background: "var(--color-mockup-bg)",
           display: "flex",
-          alignItems: screenshots.length > 0 && !url ? "stretch" : "center",
+          alignItems: "center",
           justifyContent: "center",
           padding: 24,
           textAlign: screenshots.length > 0 && !url ? "left" : "center",

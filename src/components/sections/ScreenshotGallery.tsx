@@ -10,7 +10,8 @@ interface Props {
   defaultKind?: ProjectKind;
   /** Context shown in the lightbox caption, e.g. "Velocity · Marketing". */
   title?: string;
-  frameHeight?: number;
+  /** Height of each shot's frame area — browser and phone shots share it so mixed strips align. */
+  itemHeight?: number;
 }
 
 /**
@@ -22,7 +23,7 @@ export function ScreenshotGallery({
   screenshots,
   defaultKind = "browser",
   title,
-  frameHeight = 220,
+  itemHeight = 260,
 }: Props) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
@@ -58,11 +59,31 @@ export function ScreenshotGallery({
                 textAlign: "left",
               }}
             >
-              {kind === "browser" ? (
-                <BrowserFrame title={shot.label} height={frameHeight} image={shot.src} imageAlt={shot.label} />
-              ) : (
-                <PhoneFrame caption={shot.label} height={frameHeight + 60} image={shot.src} imageAlt={shot.label} />
-              )}
+              <div
+                style={{
+                  height: itemHeight,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  overflow: "hidden",
+                }}
+              >
+                {kind === "browser" ? (
+                  <BrowserFrame
+                    title={shot.label}
+                    height={itemHeight - 48}
+                    image={shot.src}
+                    imageAlt={shot.label}
+                  />
+                ) : (
+                  <PhoneFrame
+                    caption={shot.label}
+                    height={itemHeight - 40}
+                    image={shot.src}
+                    imageAlt={shot.label}
+                  />
+                )}
+              </div>
               <div
                 style={{
                   marginTop: 8,

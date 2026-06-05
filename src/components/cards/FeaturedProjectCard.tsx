@@ -6,31 +6,44 @@ import { PhoneFrame } from "@/components/mockups/PhoneFrame";
 import { Link } from "react-router-dom";
 import type { Project } from "@/config/content";
 
+// Matches ProjectCard so featured and portfolio cards share preview height.
+const PREVIEW_HEIGHT = 280;
+
 export function FeaturedProjectCard({ project, eager = false }: { project: Project; eager?: boolean }) {
   const cover = project.image ?? project.screenshots?.[0]?.src;
   return (
-    <Card style={{ padding: 0, overflow: "hidden" }}>
+    <Card style={{ padding: 0, overflow: "hidden", height: "100%", display: "flex", flexDirection: "column" }}>
       <div style={{ padding: 16, paddingBottom: 0 }}>
-        {project.kind === "browser" ? (
-          <BrowserFrame
-            title={project.domain}
-            height={200}
-            caption={`// ${project.slug}`}
-            image={cover}
-            imageAlt={`${project.name} — ${project.description}`}
-            eager={eager}
-          />
-        ) : (
-          <PhoneFrame
-            caption={`// ${project.slug}`}
-            height={260}
-            image={cover}
-            imageAlt={`${project.name} — ${project.description}`}
-            eager={eager}
-          />
-        )}
+        <div
+          style={{
+            height: PREVIEW_HEIGHT,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            overflow: "hidden",
+          }}
+        >
+          {project.kind === "browser" ? (
+            <BrowserFrame
+              title={project.domain}
+              height={PREVIEW_HEIGHT - 48}
+              caption={`// ${project.slug}`}
+              image={cover}
+              imageAlt={`${project.name} — ${project.description}`}
+              eager={eager}
+            />
+          ) : (
+            <PhoneFrame
+              caption={`// ${project.slug}`}
+              height={PREVIEW_HEIGHT - 40}
+              image={cover}
+              imageAlt={`${project.name} — ${project.description}`}
+              eager={eager}
+            />
+          )}
+        </div>
       </div>
-      <div style={{ padding: 24, display: "flex", flexDirection: "column", gap: 8 }}>
+      <div style={{ padding: 24, display: "flex", flexDirection: "column", gap: 8, flex: 1 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div className="font-display-tight" style={{ fontSize: 22 }}>
             {project.name}
@@ -43,8 +56,9 @@ export function FeaturedProjectCard({ project, eager = false }: { project: Proje
         <Link
           to="/portfolio"
           style={{
-            marginTop: 8,
+            marginTop: "auto",
             padding: 0,
+            paddingTop: 8,
             alignSelf: "start",
             display: "inline-flex",
             alignItems: "center",

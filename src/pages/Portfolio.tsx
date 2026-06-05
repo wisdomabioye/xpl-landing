@@ -90,7 +90,7 @@ export function Portfolio() {
             style={{
               display: "grid",
               gap: 20,
-              gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
               marginBottom: 80,
             }}
           >
