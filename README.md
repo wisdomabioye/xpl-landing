@@ -78,6 +78,7 @@ xpl-landing/
 | Need to… | Edit |
 | --- | --- |
 | Add or remove a portfolio project | `content/projects.json` |
+| Add design-system screenshots | `content/systems.json` + `public/portfolio/systems/<slug>/` |
 | Update services list | `content/services.json` |
 | Add a team member | `content/team.json` |
 | Tweak company values | `content/values.json` |
@@ -88,7 +89,7 @@ xpl-landing/
 Schema lives in `src/config/content.ts`. Malformed entries fail at `npm run build`, not at runtime.
 
 ### Adding a new portfolio project
-1. Drop a screenshot into `public/portfolio/<slug>.webp` (recommended: 1200 × 800 for browser shots, 600 × 1200 for phone shots).
+1. Drop screenshots into `public/portfolio/projects/<slug>/` (recommended: 1200 × 800 for browser shots, 600 × 1200 for phone shots; webp).
 2. Add an entry to `content/projects.json`:
    ```json
    {
@@ -101,10 +102,31 @@ Schema lives in `src/config/content.ts`. Malformed entries fail at `npm run buil
      "stack": ["Solana", "Anchor", "React"],
      "year": "2025",
      "url": "https://...",         // optional — adds "View project" link
-     "image": "/portfolio/ledgerlight.webp"  // optional — falls back to placeholder
+     "screenshots": [              // optional — first one is the card cover
+       { "src": "/portfolio/projects/ledgerlight/home.webp", "label": "Home" },
+       { "src": "/portfolio/projects/ledgerlight/mobile.webp", "label": "Mobile", "kind": "phone" }
+     ]
    }
    ```
-3. Save. Image renders inside the existing browser/phone chrome with no design change. No image set = striped placeholder.
+3. Save. The first screenshot renders as the card cover inside the existing browser/phone chrome; clicking the cover opens a full-screen lightbox of all screenshots (← / → / Esc). No screenshots = striped placeholder. The legacy single `image` field still works and acts as a one-screenshot gallery.
+
+### Adding design-system screenshots
+Each system in `content/systems.json` has a `screenshots` object keyed by app surface:
+
+```json
+"screenshots": {
+  "marketing": [
+    { "src": "/portfolio/systems/velocity/marketing-home.webp", "label": "Home" },
+    { "src": "/portfolio/systems/velocity/marketing-pricing.webp", "label": "Pricing" }
+  ],
+  "dashboard": [],
+  "mobile": [
+    { "src": "/portfolio/systems/velocity/mobile-feed.webp", "label": "Feed" }
+  ]
+}
+```
+
+Files live in `public/portfolio/systems/<slug>/`. On the system showcase page each app slot shows, in priority order: the live demo iframe (`demos.<app>`) → the screenshot gallery → "Coming soon". `marketing`/`dashboard` shots default to the browser frame, `mobile` to the phone frame; set `"kind"` per screenshot to override. Append to the array to add more — order in JSON is display order.
 
 ---
 

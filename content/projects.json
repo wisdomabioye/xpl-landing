@@ -6,8 +6,20 @@
     "kind": "phone",
     "domain": "tendahq.com",
     "description": "Trustless mobile-first micro-task gig and p2p marketplace on Solana. Workers and posters transact through on-chain escrow",
-    "stack": ["Solana", "Anchor", "React-Native"],
-    "year": "2026"
+    "stack": [
+      "Solana",
+      "Anchor",
+      "React-Native"
+    ],
+    "year": "2026",
+    "screenshots": [
+      { "src": "/portfolio/projects/tenda/marketing.webp", "label": "Marketing", "kind": "mobile" },
+      { "src": "/portfolio/projects/tenda/wallet.webp", "label": "Wallet", "kind": "mobile" },
+      { "src": "/portfolio/projects/tenda/profile.webp", "label": "Profile", "kind": "mobile" },
+      { "src": "/portfolio/projects/tenda/offer.webp", "label": "Offer", "kind": "mobile" },
+      { "src": "/portfolio/projects/tenda/sell.webp", "label": "Sell", "kind": "mobile" },
+      { "src": "/portfolio/projects/tenda/my-gig.webp", "label": "Gig", "kind": "mobile" }
+    ]
   },
   {
     "slug": "fairdrop",
@@ -16,8 +28,21 @@
     "kind": "browser",
     "domain": "usefairdrop.xyz",
     "description": "Privacy-preserving token launches and capital formation on Blockchain",
-    "stack": ["Vite", "Fastify", "Postgres"],
-    "year": "2026"
+    "stack": [
+      "Vite",
+      "Fastify",
+      "Postgres"
+    ],
+    "year": "2026",
+    "screenshots": [
+      { "src": "/portfolio/projects/fairdrop/dashboard.webp", "label": "Dashboard", "kind": "browser" },
+      { "src": "/portfolio/projects/fairdrop/analytics.webp", "label": "Analytics", "kind": "browser" },
+      { "src": "/portfolio/projects/fairdrop/auction.webp", "label": "Auction", "kind": "browser" },
+      { "src": "/portfolio/projects/fairdrop/connect-wallet.webp", "label": "Connect Wallet", "kind": "browser" },
+      { "src": "/portfolio/projects/fairdrop/portfolio.webp", "label": "Portfolio", "kind": "browser" },
+      { "src": "/portfolio/projects/fairdrop/raise_auction.webp", "label": "Raise", "kind": "browser" }
+
+    ]
   },
   {
     "slug": "adorbitals",
@@ -26,18 +51,70 @@
     "kind": "browser",
     "domain": "adors.org",
     "description": "Create, trade, and manage NFTs with advanced Alkane smart contracts and DeFi capabilities",
-    "stack": ["Next.js", "Bitcoin", "Alkane"],
-    "year": "2025"
+    "stack": [
+      "Next.js",
+      "Bitcoin",
+      "Alkane"
+    ],
+    "year": "2025",
+    "screenshots": [
+      { "src": "/portfolio/projects/adorbitals/hero.webp", "label": "Hero", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/collection.webp", "label": "Collection", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/diesel.webp", "label": "Diesel Dairy", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/mint.webp", "label": "Mint", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/minted.webp", "label": "Minted", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/minted2.webp", "label": "Minted", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/orbital.webp", "label": "Orbital", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/wrap.webp", "label": "Wrap", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/connect-wallet.webp", "label": "Connect", "kind": "browser" }
+    ]
   },
   {
     "slug": "docket",
     "name": "Docket",
     "category": "Web",
     "kind": "browser",
-    "domain": "trydocket.com",
+    "domain": "trydocketapp.com",
     "description": "AI-powered case prep for U.S. immigration attorneys",
-    "stack": ["Next.js", "tRPC", "Perplexity"],
-    "year": "2026"
+    "stack": [
+      "Next.js",
+      "tRPC",
+      "Perplexity"
+    ],
+    "year": "2026",
+    "screenshots": [
+      { "src": "/portfolio/projects/docket/marketing.webp", "label": "Marketing", "kind": "browser" },
+      { "src": "/portfolio/projects/docket/partnership.webp", "label": "Partnership", "kind": "browser" },
+      { "src": "/portfolio/projects/docket/case.webp", "label": "Case", "kind": "browser" },
+      { "src": "/portfolio/projects/docket/case2.webp", "label": "Case", "kind": "browser" },
+      { "src": "/portfolio/projects/docket/case3.webp", "label": "Case", "kind": "browser" }
+    ]
+  },
+  {
+    "slug": "linked.market",
+    "name": "linked.market",
+    "category": "Web",
+    "kind": "mobile",
+    "domain": "linked.market",
+    "description": "Find your next favourite vendor.",
+    "stack": [
+      "Next.js",
+      "tRPC",
+      "Postgres"
+    ],
+    "year": "2026",
+    "screenshots": [
+      { "src": "/portfolio/projects/linked.market/marketing.webp", "label": "Marketing", "kind": "mobile" },
+      { "src": "/portfolio/projects/linked.market/categories.webp", "label": "Category", "kind": "mobile" },
+      { "src": "/portfolio/projects/linked.market/checkout.webp", "label": "Checkout", "kind": "mobile" },
+      { "src": "/portfolio/projects/linked.market/order-paid.webp", "label": "Order", "kind": "mobile" },
+      { "src": "/portfolio/projects/linked.market/product.webp", "label": "Product", "kind": "mobile" },
+      { "src": "/portfolio/projects/linked.market/product2.webp", "label": "Product", "kind": "mobile" },
+      { "src": "/portfolio/projects/linked.market/product3.webp", "label": "Product", "kind": "mobile" },
+      { "src": "/portfolio/projects/linked.market/search.webp", "label": "Search", "kind": "mobile" },
+      { "src": "/portfolio/projects/linked.market/vendor-overview.webp", "label": "Vendor", "kind": "mobile" }
+      
+    ]
   },
   {
     "slug": "etfpulse",
@@ -46,8 +123,20 @@
     "kind": "browser",
     "domain": "etfpulse.vercel.app",
     "description": "Crypto ETF flow signals. AI-explained. Delivered to Telegram.",
-    "stack": ["Python", "FastAPI", "OpenRouter"],
-    "year": "2026"
+    "stack": [
+      "Python",
+      "FastAPI",
+      "OpenRouter"
+    ],
+    "year": "2026",
+    "screenshots": [
+      { "src": "/portfolio/projects/etfpulse/marketing.webp", "label": "Marketing", "kind": "browser" },
+      { "src": "/portfolio/projects/etfpulse/signal.webp", "label": "Signal", "kind": "browser" },
+      { "src": "/portfolio/projects/etfpulse/signal_1.webp", "label": "Signal", "kind": "browser" },
+      { "src": "/portfolio/projects/etfpulse/signal_2.webp", "label": "Signal", "kind": "browser" },
+      { "src": "/portfolio/projects/etfpulse/signal_outcome.webp", "label": "Signal Outcome", "kind": "browser" }
+
+    ]
   },
   {
     "slug": "5 star",
@@ -56,8 +145,20 @@
     "kind": "browser",
     "domain": "5startransport.com.ng",
     "description": "A leader in eco-friendly fleet management and urban transportation",
-    "stack": ["Next.js", "React-Native", "GraphQL"],
-    "year": "2025"
+    "stack": [
+      "Next.js",
+      "React-Native",
+      "GraphQL"
+    ],
+    "year": "2025",
+    "screenshots": [
+      { "src": "/portfolio/projects/5star/marketing.webp", "label": "Marketing", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/services.webp", "label": "Services", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/value.webp", "label": "Values", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/credit.webp", "label": "Credit", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/get-started.webp", "label": "Get Started", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/feedback.webp", "label": "Feedback", "kind": "browser" }
+    ]
   },
   {
     "slug": "revvi",
@@ -66,7 +167,14 @@
     "kind": "phone",
     "domain": "revvi-org.vercel.app",
     "description": "Revvi is built on the idea that human movement and transportation are valuable economic resources",
-    "stack": ["React-Native", "Expo", "tRPC"],
-    "year": "2025"
+    "stack": [
+      "React-Native",
+      "Expo",
+      "tRPC"
+    ],
+    "year": "2025",
+    "screenshots": [
+
+    ]
   }
 ]

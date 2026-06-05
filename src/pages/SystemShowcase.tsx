@@ -5,7 +5,13 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 import { Pill } from "@/components/ui/Pill";
 import { Icon } from "@/components/ui/Icon";
 import { CTABanner } from "@/components/sections/CTABanner";
-import { getSystemBySlug, type SystemStatus } from "@/config/content";
+import { ScreenshotGallery } from "@/components/sections/ScreenshotGallery";
+import {
+  getSystemBySlug,
+  type Screenshot,
+  type SystemApp,
+  type SystemStatus,
+} from "@/config/content";
 
 const statusLabel: Record<SystemStatus, string> = {
   planned: "Planned",
@@ -19,9 +25,7 @@ const statusColor: Record<SystemStatus, string> = {
   live: "var(--color-accent)",
 };
 
-type AppKey = "marketing" | "dashboard" | "mobile";
-
-const appLabels: Record<AppKey, { title: string; subtitle: string }> = {
+const appLabels: Record<SystemApp, { title: string; subtitle: string }> = {
   marketing: { title: "Marketing", subtitle: "Public-facing site" },
   dashboard: { title: "Dashboard", subtitle: "Logged-in app surface" },
   mobile: { title: "Mobile", subtitle: "Mobile-first web · phone viewport" },
@@ -35,7 +39,7 @@ export function SystemShowcase() {
     return <Navigate to="/portfolio" replace />;
   }
 
-  const apps: AppKey[] = ["marketing", "dashboard", "mobile"];
+  const apps: SystemApp[] = ["marketing", "dashboard", "mobile"];
 
   return (
     <Page>
@@ -180,78 +184,12 @@ export function SystemShowcase() {
                   title={appLabels[app].title}
                   subtitle={appLabels[app].subtitle}
                   url={system.demos[app]}
+                  screenshots={system.screenshots?.[app] ?? []}
+                  defaultKind={app === "mobile" ? "phone" : "browser"}
                   systemName={system.name}
                 />
               </Reveal>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section" style={{ paddingTop: 0 }}>
-        <div className="wrap">
-          <div
-            style={{
-              display: "grid",
-              gap: 24,
-              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            }}
-          >
-            <Reveal>
-              <DetailBlock title="Themes">
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {system.themes.map((t) => (
-                    <Pill key={t}>{t}</Pill>
-                  ))}
-                </div>
-              </DetailBlock>
-            </Reveal>
-
-            <Reveal delay={80}>
-              <DetailBlock title="Mood references">
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                  {system.moodReferences.map((r) => (
-                    <Pill key={r}>{r}</Pill>
-                  ))}
-                </div>
-              </DetailBlock>
-            </Reveal>
-
-            <Reveal delay={160}>
-              <DetailBlock title="Use this system">
-                <code
-                  style={{
-                    fontFamily: "var(--font-mono)",
-                    fontSize: 12,
-                    color: "var(--color-text)",
-                    background: "var(--color-bg)",
-                    padding: "10px 12px",
-                    borderRadius: 6,
-                    border: "1px solid var(--color-rule)",
-                    display: "block",
-                    overflow: "auto",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  npx degit xpl-dev/xpl-templates/{system.slug} my-app
-                </code>
-                <a
-                  href={system.repoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: "var(--color-accent)",
-                    fontSize: 13,
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 6,
-                    marginTop: 12,
-                  }}
-                >
-                  View on GitHub <Icon name="arrow-up-right" size={14} />
-                </a>
-              </DetailBlock>
-            </Reveal>
           </div>
         </div>
       </section>
@@ -265,11 +203,15 @@ function DemoSlot({
   title,
   subtitle,
   url,
+  screenshots,
+  defaultKind,
   systemName,
 }: {
   title: string;
   subtitle: string;
   url: string | null;
+  screenshots: Screenshot[];
+  defaultKind: "browser" | "phone";
   systemName: string;
 }) {
   return (
@@ -330,10 +272,10 @@ function DemoSlot({
           flex: 1,
           background: "var(--color-mockup-bg)",
           display: "flex",
-          alignItems: "center",
+          alignItems: screenshots.length > 0 && !url ? "stretch" : "center",
           justifyContent: "center",
           padding: 24,
-          textAlign: "center",
+          textAlign: screenshots.length > 0 && !url ? "left" : "center",
         }}
       >
         {url ? (
@@ -350,6 +292,14 @@ function DemoSlot({
             }}
             loading="lazy"
           />
+        ) : screenshots.length > 0 ? (
+          <div style={{ width: "100%", minWidth: 0 }}>
+            <ScreenshotGallery
+              screenshots={screenshots}
+              defaultKind={defaultKind}
+              title={`${systemName} · ${title}`}
+            />
+          </div>
         ) : (
           <div>
             <div
@@ -376,22 +326,3 @@ function DemoSlot({
   );
 }
 
-function DetailBlock({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div className="card" style={{ padding: 24 }}>
-      <div
-        style={{
-          fontFamily: "var(--font-mono)",
-          fontSize: 11,
-          letterSpacing: "0.16em",
-          textTransform: "uppercase",
-          color: "var(--color-muted-2)",
-          marginBottom: 14,
-        }}
-      >
-        {title}
-      </div>
-      {children}
-    </div>
-  );
-}

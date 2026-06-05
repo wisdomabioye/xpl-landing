@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import type { Project } from "@/config/content";
 
 export function FeaturedProjectCard({ project, eager = false }: { project: Project; eager?: boolean }) {
+  const cover = project.image ?? project.screenshots?.[0]?.src;
   return (
     <Card style={{ padding: 0, overflow: "hidden" }}>
       <div style={{ padding: 16, paddingBottom: 0 }}>
@@ -15,7 +16,7 @@ export function FeaturedProjectCard({ project, eager = false }: { project: Proje
             title={project.domain}
             height={200}
             caption={`// ${project.slug}`}
-            image={project.image}
+            image={cover}
             imageAlt={`${project.name} — ${project.description}`}
             eager={eager}
           />
@@ -23,7 +24,7 @@ export function FeaturedProjectCard({ project, eager = false }: { project: Proje
           <PhoneFrame
             caption={`// ${project.slug}`}
             height={260}
-            image={project.image}
+            image={cover}
             imageAlt={`${project.name} — ${project.description}`}
             eager={eager}
           />

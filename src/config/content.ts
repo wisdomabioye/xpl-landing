@@ -37,6 +37,18 @@ export type IconName =
 export type ProjectKind = "browser" | "phone";
 export type ProjectCategory = "Web" | "Mobile" | "Web3";
 
+/**
+ * A single UI screenshot. Files live under `public/portfolio/` —
+ * `src` is the public path, e.g. "/portfolio/projects/tenda/home.png".
+ * `kind` picks the mockup frame; when omitted it falls back to the
+ * owning project's `kind` (or "browser" for design-system screens).
+ */
+export interface Screenshot {
+  src: string;
+  label: string;
+  kind?: ProjectKind;
+}
+
 export interface Project {
   slug: string;
   name: string;
@@ -48,6 +60,7 @@ export interface Project {
   year: string;
   url?: string;
   image?: string;
+  screenshots?: Screenshot[];
 }
 
 export interface Service {
@@ -96,11 +109,16 @@ export interface Budget {
 
 export type SystemStatus = "planned" | "in-progress" | "live";
 
+export type SystemApp = "marketing" | "dashboard" | "mobile";
+
 export interface SystemDemos {
   marketing: string | null;
   dashboard: string | null;
   mobile: string | null;
 }
+
+/** Screenshots grouped by app surface. Keys are optional — add as screens land. */
+export type SystemScreenshots = Partial<Record<SystemApp, Screenshot[]>>;
 
 export interface DesignSystem {
   slug: string;
@@ -116,6 +134,7 @@ export interface DesignSystem {
   repoUrl: string;
   briefPath: string;
   moodReferences: string[];
+  screenshots?: SystemScreenshots;
 }
 
 export const projects = projectsJson as readonly Project[];
