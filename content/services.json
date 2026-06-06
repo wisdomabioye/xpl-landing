@@ -34,8 +34,8 @@
     "number": "03",
     "name": "Backend & API",
     "icon": "server",
-    "shortDesc": "Node.js, REST, GraphQL — scalable server-side systems.",
-    "stack": "Node.js · Postgres · Redis · GraphQL · gRPC",
+    "shortDesc": "Node.js, Rust, Python, REST, GraphQL — scalable server-side systems.",
+    "stack": "Node.js · Rust · Python · Postgres · Redis · GraphQL · gRPC",
     "description": "Scalable server-side systems that survive traffic spikes and audit-grade reviews. Boring tech, ruthlessly applied.",
     "bullets": [
       "REST and GraphQL APIs",
