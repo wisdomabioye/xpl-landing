@@ -2,23 +2,26 @@
   {
     "slug": "tenda",
     "name": "Tenda",
-    "category": "Mobile",
-    "kind": "phone",
+    "category": "Web3",
+    "kind": "browser",
     "domain": "tendahq.com",
-    "description": "Trustless mobile-first micro-task gig and p2p marketplace on Solana. Workers and posters transact through on-chain escrow",
+    "description": "Escrow-secured gigs and P2P cash trades, hired by people and AI agents. Money locks on-chain before work starts; proof releases it.",
     "stack": [
+      "Solidity",
+      "Celo",
+      "Base",
+      "0g",
       "Solana",
       "Anchor",
       "React-Native"
     ],
     "year": "2026",
     "screenshots": [
-      { "src": "/portfolio/projects/tenda/marketing.webp", "label": "Marketing", "kind": "mobile" },
-      { "src": "/portfolio/projects/tenda/wallet.webp", "label": "Wallet", "kind": "mobile" },
-      { "src": "/portfolio/projects/tenda/profile.webp", "label": "Profile", "kind": "mobile" },
-      { "src": "/portfolio/projects/tenda/offer.webp", "label": "Offer", "kind": "mobile" },
-      { "src": "/portfolio/projects/tenda/sell.webp", "label": "Sell", "kind": "mobile" },
-      { "src": "/portfolio/projects/tenda/my-gig.webp", "label": "Gig", "kind": "mobile" }
+      { "src": "/portfolio/projects/tenda/marketing.webp", "label": "Marketing", "kind": "browser" },
+      { "src": "/portfolio/projects/tenda/wallet.webp", "label": "Wallet", "kind": "browser" },
+      { "src": "/portfolio/projects/tenda/gig.webp", "label": "Gig", "kind": "browser" },
+      { "src": "/portfolio/projects/tenda/browse-gig.webp", "label": "Browse", "kind": "browser" },
+      { "src": "/portfolio/projects/tenda/dashboard.webp", "label": "Dashboard", "kind": "browser" }
     ]
   },
   {
@@ -42,31 +45,6 @@
       { "src": "/portfolio/projects/fairdrop/portfolio.webp", "label": "Portfolio", "kind": "browser" },
       { "src": "/portfolio/projects/fairdrop/raise_auction.webp", "label": "Raise", "kind": "browser" }
 
-    ]
-  },
-  {
-    "slug": "adorbitals",
-    "name": "Adorbitals",
-    "category": "Web3",
-    "kind": "browser",
-    "domain": "adors.org",
-    "description": "Create, trade, and manage NFTs with advanced Alkane smart contracts and DeFi capabilities",
-    "stack": [
-      "Next.js",
-      "Bitcoin",
-      "Alkane"
-    ],
-    "year": "2025",
-    "screenshots": [
-      { "src": "/portfolio/projects/adorbitals/hero.webp", "label": "Hero", "kind": "browser" },
-      { "src": "/portfolio/projects/adorbitals/collection.webp", "label": "Collection", "kind": "browser" },
-      { "src": "/portfolio/projects/adorbitals/diesel.webp", "label": "Diesel Dairy", "kind": "browser" },
-      { "src": "/portfolio/projects/adorbitals/mint.webp", "label": "Mint", "kind": "browser" },
-      { "src": "/portfolio/projects/adorbitals/minted.webp", "label": "Minted", "kind": "browser" },
-      { "src": "/portfolio/projects/adorbitals/minted2.webp", "label": "Minted", "kind": "browser" },
-      { "src": "/portfolio/projects/adorbitals/orbital.webp", "label": "Orbital", "kind": "browser" },
-      { "src": "/portfolio/projects/adorbitals/wrap.webp", "label": "Wrap", "kind": "browser" },
-      { "src": "/portfolio/projects/adorbitals/connect-wallet.webp", "label": "Connect", "kind": "browser" }
     ]
   },
   {
@@ -116,6 +94,32 @@
       
     ]
   },
+  {
+    "slug": "adorbitals",
+    "name": "Adorbitals",
+    "category": "Web3",
+    "kind": "browser",
+    "domain": "adors.org",
+    "description": "Create, trade, and manage NFTs with advanced Alkane smart contracts and DeFi capabilities",
+    "stack": [
+      "Next.js",
+      "Bitcoin",
+      "Alkane"
+    ],
+    "year": "2025",
+    "screenshots": [
+      { "src": "/portfolio/projects/adorbitals/hero.webp", "label": "Hero", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/collection.webp", "label": "Collection", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/diesel.webp", "label": "Diesel Dairy", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/mint.webp", "label": "Mint", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/minted.webp", "label": "Minted", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/minted2.webp", "label": "Minted", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/orbital.webp", "label": "Orbital", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/wrap.webp", "label": "Wrap", "kind": "browser" },
+      { "src": "/portfolio/projects/adorbitals/connect-wallet.webp", "label": "Connect", "kind": "browser" }
+    ]
+  },
+  
   {
     "slug": "etfpulse",
     "name": "Etfpulse",
