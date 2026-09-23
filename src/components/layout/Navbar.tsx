@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Logo } from "@/components/ui/Logo";
 import { Icon } from "@/components/ui/Icon";
@@ -9,11 +9,10 @@ import { cn } from "@/lib/cn";
 
 export function Navbar() {
   const scrolled = useScrolled(12);
-  const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   const navigate = useNavigate();
-
-  useEffect(() => setOpen(false), [pathname]);
+  const [openPath, setOpenPath] = useState<string | null>(null);
+  const open = openPath === pathname;
 
   return (
     <>
@@ -44,7 +43,7 @@ export function Navbar() {
               className={cn("hamburger", open && "open")}
               aria-label="Menu"
               aria-expanded={open}
-              onClick={() => setOpen((o) => !o)}
+              onClick={() => setOpenPath(open ? null : pathname)}
             >
               <span /> <span /> <span />
             </button>
@@ -60,14 +59,14 @@ export function Navbar() {
             onClick={(e) => {
               e.preventDefault();
               navigate(item.to);
-              setOpen(false);
+              setOpenPath(null);
             }}
           >
             {item.label}
           </a>
         ))}
-        <div style={{ marginTop: 32 }}>
-          <Button to="/contact" variant="primary" onClick={() => setOpen(false)}>
+        <div className="mobile-menu-cta">
+          <Button to="/contact" variant="primary" onClick={() => setOpenPath(null)}>
             <span>Start a project</span>
             <Icon name="arrow-right" size={16} className="arrow" />
           </Button>
