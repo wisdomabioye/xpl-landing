@@ -13,6 +13,7 @@ export const site = {
   description:
     "A software agency engineering web, mobile, and Web3 products for ambitious teams worldwide.",
   origin: "Nigerian roots · Available worldwide",
+  url: trim(env.VITE_SITE_URL),
   contact: {
     email: trim(env.VITE_CONTACT_EMAIL),
     whatsapp: trim(env.VITE_WHATSAPP_NUMBER),

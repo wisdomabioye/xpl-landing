@@ -3,7 +3,19 @@ import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/ui/Reveal";
 import { site } from "@/config/site";
 
-export function CTABanner() {
+interface CTABannerProps {
+  title?: string;
+  body?: string;
+  primaryLabel?: string;
+  primaryTo?: string;
+}
+
+export function CTABanner({
+  title = "Ready to build something great?",
+  body = "Tell us about your project and we will get back to you within 24 hours.",
+  primaryLabel = "Start a project",
+  primaryTo = "/contact",
+}: CTABannerProps = {}) {
   return (
     <section
       className="section"
@@ -32,21 +44,19 @@ export function CTABanner() {
               className="font-display-tight"
               style={{ fontSize: "clamp(36px, 5vw, 56px)", margin: 0, lineHeight: 1.05 }}
             >
-              Ready to build
-              <br />
-              something great?
+              {title}
             </h2>
           </Reveal>
           <Reveal delay={100}>
             <p style={{ color: "var(--color-muted)", marginTop: 18, fontSize: 16, maxWidth: 480 }}>
-              Tell us about your project and we will get back to you within 24 hours.
+              {body}
             </p>
           </Reveal>
         </div>
         <Reveal delay={180}>
           <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-            <Button to="/contact" variant="primary">
-              <span>Start a project</span>
+            <Button to={primaryTo} variant="primary">
+              <span>{primaryLabel}</span>
               <Icon name="arrow-right" size={16} className="arrow" />
             </Button>
             {site.contact.calendly && (

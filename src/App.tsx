@@ -8,6 +8,7 @@ import { SystemShowcase } from "@/pages/SystemShowcase";
 import { Contact } from "@/pages/Contact";
 import { Privacy } from "@/pages/Privacy";
 import { Terms } from "@/pages/Terms";
+import { ProductRescue } from "@/pages/ProductRescue";
 import { NotFound } from "@/pages/NotFound";
 
 const router = createBrowserRouter([
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/services", element: <Services /> },
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/systems/:slug", element: <SystemShowcase /> },
+      { path: "/product-rescue", element: <ProductRescue /> },
       { path: "/contact", element: <Contact /> },
       { path: "/privacy", element: <Privacy /> },
       { path: "/terms", element: <Terms /> },

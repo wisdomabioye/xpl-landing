@@ -135,6 +135,9 @@ Files live in `public/portfolio/systems/<slug>/`. On the system showcase page ea
 All public — exposed to the browser by Vite's `VITE_` prefix. Anything truly secret should be on a backend, not here.
 
 ```
+# Public site origin — used for canonical and social metadata
+VITE_SITE_URL=https://www.xpldevelopers.org
+
 # Contact form (EmailJS — free tier, ~200 emails/mo)
 VITE_EMAILJS_SERVICE_ID=service_xxxxxxx     # from EmailJS → Email Services
 VITE_EMAILJS_TEMPLATE_ID=template_xxxxxxx   # from EmailJS → Email Templates
@@ -151,6 +154,8 @@ VITE_SOCIAL_INSTAGRAM=
 VITE_SOCIAL_TIKTOK=
 VITE_SOCIAL_LINKEDIN=
 ```
+
+Set `VITE_SITE_URL` to the deployed site origin without a trailing slash. When omitted, browser-rendered metadata falls back to the current origin.
 
 **Calendly** and each **social icon** are conditionally rendered. Leave the env var blank and the channel/icon disappears from the UI — no code change needed.
 

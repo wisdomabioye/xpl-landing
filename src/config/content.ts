@@ -12,6 +12,7 @@ import processJson from "@content/process.json";
 import statsJson from "@content/stats.json";
 import budgetsJson from "@content/budgets.json";
 import systemsJson from "@content/systems.json";
+import productRescueJson from "@content/product-rescue.json";
 
 export type IconName =
   | "code"
@@ -107,6 +108,45 @@ export interface Budget {
   label: string;
 }
 
+export interface CtaLink {
+  label: string;
+  to: string;
+}
+
+export interface OfferCardItem {
+  title: string;
+  description: string;
+}
+
+export interface OfferSectionIntro {
+  eyebrow: string;
+  heading: string;
+  body: string;
+}
+
+export interface ProductRescueContent {
+  hero: {
+    eyebrow: string;
+    title: string;
+    accent: string;
+    intro: string;
+    primaryCta: CtaLink;
+    secondaryCta: CtaLink;
+  };
+  overview: OfferSectionIntro;
+  symptoms: OfferCardItem[];
+  deliverablesSection: OfferSectionIntro;
+  deliverables: OfferCardItem[];
+  processSection: OfferSectionIntro;
+  process: ProcessStep[];
+  fitSection: OfferSectionIntro & { goodTitle: string; badTitle: string };
+  goodFit: string[];
+  badFit: string[];
+  scopeLabel: string;
+  scopeNote: string;
+  cta: { title: string; body: string; label: string; to: string };
+}
+
 export type SystemStatus = "planned" | "in-progress" | "live";
 
 export type SystemApp = "marketing" | "dashboard" | "mobile";
@@ -145,6 +185,7 @@ export const processSteps = processJson as readonly ProcessStep[];
 export const stats = statsJson as Stats;
 export const budgets = budgetsJson as readonly Budget[];
 export const systems = systemsJson as readonly DesignSystem[];
+export const productRescue: ProductRescueContent = productRescueJson;
 
 export const projectCategories: ProjectCategory[] = ["Web", "Mobile", "Web3"];
 

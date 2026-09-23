@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "eyebrow": "Product rescue",
+    "title": "Stabilize what is",
+    "accent": "blocking your roadmap.",
+    "intro": "A focused engagement for teams with a live digital product that has become unstable, delayed, fragile to release, or difficult to maintain.",
+    "primaryCta": { "label": "Discuss your product", "to": "/contact" },
+    "secondaryCta": { "label": "See our work", "to": "/portfolio" }
+  },
+  "overview": {
+    "eyebrow": "When to call us",
+    "heading": "Your product works. Delivery does not.",
+    "body": "We examine the product and delivery system, agree the critical scope with you, correct that scope, and leave your team with a prioritized recovery roadmap. A rescue is not an open-ended rebuild."
+  },
+  "symptoms": [
+    { "title": "Recurring production bugs", "description": "The same failures return, fixes create regressions, or confidence in releases is falling." },
+    { "title": "A fragile release process", "description": "Deployments are manual, risky, poorly observed, or dependent on one person." },
+    { "title": "A stalled roadmap", "description": "Technical debt and unclear ownership make otherwise valuable features difficult to ship." },
+    { "title": "A difficult handover", "description": "A developer or technical cofounder has left and the incoming team needs a dependable path forward." },
+    { "title": "Weak product visibility", "description": "Monitoring, diagnostics, or operational documentation are not strong enough to explain failures." },
+    { "title": "A temporary senior gap", "description": "The internal team needs experienced engineering capacity to diagnose and unblock delivery." }
+  ],
+  "deliverablesSection": {
+    "eyebrow": "What you leave with",
+    "heading": "A correction and a path forward.",
+    "body": "The engagement stays anchored to an agreed critical scope. Broader implementation becomes a separate, deliberate decision."
+  },
+  "deliverables": [
+    { "title": "Technical assessment", "description": "A focused review of the agreed product areas, delivery risks, and evidence available to the team." },
+    { "title": "Critical-scope correction", "description": "Implementation work on the specific high-priority scope agreed after assessment." },
+    { "title": "Verification and handover", "description": "Evidence that the agreed correction behaves as intended, plus a clear explanation for your team." },
+    { "title": "Recovery roadmap", "description": "A prioritized next-step plan separating urgent risks, stabilization work, and later improvements." }
+  ],
+  "processSection": {
+    "eyebrow": "How it works",
+    "heading": "Evidence before assumptions.",
+    "body": "We start with the business impact, trace the relevant system, and keep the correction bounded to what both sides approve."
+  },
+  "process": [
+    { "number": "01", "title": "Understand", "description": "Confirm the business impact, access, constraints, and critical product area." },
+    { "number": "02", "title": "Assess", "description": "Trace the relevant system and delivery path using available evidence." },
+    { "number": "03", "title": "Prioritize", "description": "Agree the critical correction, boundaries, acceptance evidence, and next-step risks." },
+    { "number": "04", "title": "Correct", "description": "Implement and verify the agreed critical scope without silently expanding it." },
+    { "number": "05", "title": "Hand over", "description": "Explain the work and deliver a prioritized recovery roadmap." }
+  ],
+  "fitSection": {
+    "eyebrow": "Fit",
+    "heading": "Clear boundaries protect the outcome.",
+    "body": "A rescue works best when there is a live product, a concrete problem, and access to the people and systems needed to investigate it.",
+    "goodTitle": "A strong fit",
+    "badTitle": "Not the right fit"
+  },
+  "goodFit": [
+    "You have a live product and a specific stability or delivery problem.",
+    "Your team can provide legitimate access to the relevant code, systems, and decision-makers.",
+    "You want an evidence-led plan before committing to a larger rebuild."
+  ],
+  "badFit": [
+    "You need a full new product disguised as a short rescue.",
+    "The request depends on intrusive testing without written authorization.",
+    "You need guaranteed outcomes before the product and evidence can be assessed."
+  ],
+  "scopeLabel": "Scope note",
+  "scopeNote": "The exact scope, schedule, access requirements, and fee are confirmed after an initial conversation. Full implementation beyond the agreed correction and ongoing maintenance are separate engagements.",
+  "cta": {
+    "title": "Bring the product problem into focus.",
+    "body": "Tell us what is failing, what it is blocking, and what your team has already tried. We will respond with the right next step.",
+    "label": "Start a rescue conversation",
+    "to": "/contact"
+  }
+}

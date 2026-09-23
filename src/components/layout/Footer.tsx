@@ -13,6 +13,7 @@ const socialLinks: Array<{ key: keyof typeof site.social; icon: IconName; label:
 ];
 const footerNav = [
   ...primaryNav,
+  { to: "/product-rescue", label: "Product Rescue" },
   { to: "/privacy", label: "Privacy Policy" },
   { to: "/terms", label: "Terms" },
 ];
