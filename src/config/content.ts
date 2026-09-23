@@ -11,6 +11,7 @@ import teamJson from "@content/team.json";
 import processJson from "@content/process.json";
 import statsJson from "@content/stats.json";
 import budgetsJson from "@content/budgets.json";
+import inquiryOptionsJson from "@content/inquiry-options.json";
 import systemsJson from "@content/systems.json";
 import productRescueJson from "@content/product-rescue.json";
 
@@ -113,6 +114,23 @@ export interface CtaLink {
   to: string;
 }
 
+export interface InquiryOption {
+  value: string;
+  label: string;
+}
+
+export interface OfferPackage {
+  badge: string;
+  name: string;
+  duration: string;
+  nigeriaPrice: string;
+  internationalPrice: string;
+  description: string;
+  detail: string;
+  cta: CtaLink;
+  featured: boolean;
+}
+
 export interface OfferCardItem {
   title: string;
   description: string;
@@ -135,6 +153,8 @@ export interface ProductRescueContent {
   };
   overview: OfferSectionIntro;
   symptoms: OfferCardItem[];
+  pricingSection: OfferSectionIntro;
+  packages: OfferPackage[];
   deliverablesSection: OfferSectionIntro;
   deliverables: OfferCardItem[];
   processSection: OfferSectionIntro;
@@ -184,6 +204,7 @@ export const team = teamJson as readonly TeamMember[];
 export const processSteps = processJson as readonly ProcessStep[];
 export const stats = statsJson as Stats;
 export const budgets = budgetsJson as readonly Budget[];
+export const inquiryOptions: readonly InquiryOption[] = inquiryOptionsJson;
 export const systems = systemsJson as readonly DesignSystem[];
 export const productRescue: ProductRescueContent = productRescueJson;
 

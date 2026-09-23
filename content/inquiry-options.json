@@ -1,0 +1,13 @@
+[
+  { "value": "product-rescue-assessment", "label": "Product Rescue Assessment" },
+  { "value": "product-rescue-sprint", "label": "Product Rescue Sprint" },
+  { "value": "new-product-build", "label": "New product build" },
+  { "value": "agency-partner", "label": "Agency engineering partner" },
+  { "value": "maintenance-support", "label": "Maintenance & ongoing support" },
+  { "value": "web-app", "label": "Web app" },
+  { "value": "mobile-app", "label": "Mobile app" },
+  { "value": "backend-api", "label": "Backend & API" },
+  { "value": "web3-blockchain", "label": "Web3 & blockchain" },
+  { "value": "ui-ux-design", "label": "UI/UX design" },
+  { "value": "not-sure", "label": "Not sure — help me scope it" }
+]

@@ -4,6 +4,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { CTABanner } from "@/components/sections/CTABanner";
 import { OfferCardGrid } from "@/components/sections/OfferCardGrid";
+import { PricingCards } from "@/components/sections/PricingCards";
 import { PageHero } from "@/components/sections/PageHero";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { productRescue } from "@/config/content";
@@ -44,6 +45,8 @@ export function ProductRescue() {
     hero,
     overview,
     symptoms,
+    pricingSection,
+    packages,
     deliverablesSection,
     deliverables,
     processSection,
@@ -63,6 +66,12 @@ export function ProductRescue() {
         <div className="wrap">
           <SectionHeading {...overview} />
           <OfferCardGrid items={symptoms} />
+        </div>
+      </section>
+      <section className="section">
+        <div className="wrap">
+          <SectionHeading {...pricingSection} />
+          <PricingCards packages={packages} />
         </div>
       </section>
       <section className="section">

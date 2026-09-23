@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Page } from "@/components/ui/Page";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
@@ -9,7 +10,7 @@ import { Icon } from "@/components/ui/Icon";
 import { CornerTicks } from "@/components/mockups/CornerTicks";
 import { sendContactBrief, type ContactPayload } from "@/lib/emailjs";
 import { isEmailjsConfigured, site, whatsappLink } from "@/config/site";
-import { services, budgets } from "@/config/content";
+import { budgets, inquiryOptions } from "@/config/content";
 import type { IconName } from "@/config/content";
 
 interface Channel {
@@ -65,7 +66,11 @@ const initialForm: ContactPayload = {
 };
 
 export function Contact() {
-  const [form, setForm] = useState<ContactPayload>(initialForm);
+  const [searchParams] = useSearchParams();
+  const requestedInterest = searchParams.get("interest") ?? "";
+  const initialService =
+    inquiryOptions.find((option) => option.value === requestedInterest)?.label ?? "";
+  const [form, setForm] = useState<ContactPayload>({ ...initialForm, service: initialService });
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const channels = useMemo(buildChannels, []);
@@ -351,7 +356,7 @@ export function Contact() {
                 className="contact-form-row"
                 style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginTop: 20 }}
               >
-                <Field label="Service needed" required htmlFor="contact-service">
+                <Field label="What do you need?" required htmlFor="contact-service">
                   <select
                     id="contact-service"
                     className="select"
@@ -360,13 +365,12 @@ export function Contact() {
                     value={form.service}
                     onChange={update("service")}
                   >
-                    <option value="">Select a service…</option>
-                    {services.map((s) => (
-                      <option key={s.slug} value={s.name}>
-                        {s.name}
+                    <option value="">Select an engagement…</option>
+                    {inquiryOptions.map((option) => (
+                      <option key={option.value} value={option.label}>
+                        {option.label}
                       </option>
                     ))}
-                    <option value="not-sure">Not sure</option>
                   </select>
                 </Field>
                 <Field label="Budget range" required htmlFor="contact-budget">

@@ -20,6 +20,35 @@
     { "title": "Weak product visibility", "description": "Monitoring, diagnostics, or operational documentation are not strong enough to explain failures." },
     { "title": "A temporary senior gap", "description": "The internal team needs experienced engineering capacity to diagnose and unblock delivery." }
   ],
+  "pricingSection": {
+    "eyebrow": "Start with the right scope",
+    "heading": "Two clear ways to begin.",
+    "body": "Start with a paid assessment when the critical scope is not yet clear, or move into a bounded rescue sprint when the problem and access are ready."
+  },
+  "packages": [
+    {
+      "badge": "Step 01",
+      "name": "Rescue Assessment",
+      "duration": "3–5 business days",
+      "nigeriaPrice": "₦450,000",
+      "internationalPrice": "$750",
+      "description": "Choose this when the symptoms are clear but the critical technical scope is not.",
+      "detail": "Includes a focused assessment, risk map, recommended critical scope, and fixed implementation proposal. The fee is credited to a Rescue Sprint accepted within 14 days.",
+      "cta": { "label": "Choose assessment", "to": "/contact?interest=product-rescue-assessment" },
+      "featured": false
+    },
+    {
+      "badge": "Step 02",
+      "name": "Product Rescue Sprint",
+      "duration": "10 business days",
+      "nigeriaPrice": "₦1,200,000",
+      "internationalPrice": "$2,000",
+      "description": "Choose this when the problem, access, and critical outcome are ready to be bounded.",
+      "detail": "Includes the assessment, one agreed critical correction, verification, technical handover, and a prioritized recovery roadmap.",
+      "cta": { "label": "Choose rescue sprint", "to": "/contact?interest=product-rescue-sprint" },
+      "featured": true
+    }
+  ],
   "deliverablesSection": {
     "eyebrow": "What you leave with",
     "heading": "A correction and a path forward.",

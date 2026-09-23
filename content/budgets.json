@@ -1,7 +1,7 @@
 [
-  { "value": "under-1k", "label": "Under $1k" },
-  { "value": "1k-5k", "label": "$1k – $5k" },
-  { "value": "5k-20k", "label": "$5k – $20k" },
-  { "value": "20k-plus", "label": "$20k+" },
-  { "value": "discuss", "label": "Let's discuss" }
+  { "value": "under-entry", "label": "Under ₦500k / under $750" },
+  { "value": "entry-rescue", "label": "₦500k–₦1.2m / $750–$2k" },
+  { "value": "rescue-growth", "label": "₦1.2m–₦3.5m / $2k–$5k" },
+  { "value": "growth-plus", "label": "₦3.5m+ / $5k+" },
+  { "value": "scope-first", "label": "Not sure — help me scope it" }
 ]
