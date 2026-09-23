@@ -25,6 +25,49 @@
     ]
   },
   {
+    "slug": "docket",
+    "name": "Docket",
+    "category": "Web",
+    "kind": "browser",
+    "domain": "trydocketapp.com",
+    "description": "AI-powered case prep for U.S. immigration attorneys",
+    "stack": [
+      "Next.js",
+      "tRPC",
+      "Perplexity"
+    ],
+    "year": "2026",
+    "screenshots": [
+      { "src": "/portfolio/projects/docket/marketing.webp", "label": "Marketing", "kind": "browser" },
+      { "src": "/portfolio/projects/docket/partnership.webp", "label": "Partnership", "kind": "browser" },
+      { "src": "/portfolio/projects/docket/case.webp", "label": "Case", "kind": "browser" },
+      { "src": "/portfolio/projects/docket/case2.webp", "label": "Case", "kind": "browser" },
+      { "src": "/portfolio/projects/docket/case3.webp", "label": "Case", "kind": "browser" }
+    ]
+  },
+  {
+    "slug": "5 star",
+    "name": "5 Star",
+    "category": "Web",
+    "kind": "browser",
+    "domain": "5startransport.com.ng",
+    "description": "A leader in eco-friendly fleet management and urban transportation",
+    "stack": [
+      "Next.js",
+      "React-Native",
+      "GraphQL"
+    ],
+    "year": "2025",
+    "screenshots": [
+      { "src": "/portfolio/projects/5star/marketing.webp", "label": "Marketing", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/services.webp", "label": "Services", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/value.webp", "label": "Values", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/credit.webp", "label": "Credit", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/get-started.webp", "label": "Get Started", "kind": "browser" },
+      { "src": "/portfolio/projects/5star/feedback.webp", "label": "Feedback", "kind": "browser" }
+    ]
+  },
+  {
     "slug": "fairdrop",
     "name": "Fairdrop",
     "category": "Web3",
@@ -45,27 +88,6 @@
       { "src": "/portfolio/projects/fairdrop/portfolio.webp", "label": "Portfolio", "kind": "browser" },
       { "src": "/portfolio/projects/fairdrop/raise_auction.webp", "label": "Raise", "kind": "browser" }
 
-    ]
-  },
-  {
-    "slug": "docket",
-    "name": "Docket",
-    "category": "Web",
-    "kind": "browser",
-    "domain": "trydocketapp.com",
-    "description": "AI-powered case prep for U.S. immigration attorneys",
-    "stack": [
-      "Next.js",
-      "tRPC",
-      "Perplexity"
-    ],
-    "year": "2026",
-    "screenshots": [
-      { "src": "/portfolio/projects/docket/marketing.webp", "label": "Marketing", "kind": "browser" },
-      { "src": "/portfolio/projects/docket/partnership.webp", "label": "Partnership", "kind": "browser" },
-      { "src": "/portfolio/projects/docket/case.webp", "label": "Case", "kind": "browser" },
-      { "src": "/portfolio/projects/docket/case2.webp", "label": "Case", "kind": "browser" },
-      { "src": "/portfolio/projects/docket/case3.webp", "label": "Case", "kind": "browser" }
     ]
   },
   {
@@ -140,28 +162,6 @@
       { "src": "/portfolio/projects/etfpulse/signal_2.webp", "label": "Signal", "kind": "browser" },
       { "src": "/portfolio/projects/etfpulse/signal_outcome.webp", "label": "Signal Outcome", "kind": "browser" }
 
-    ]
-  },
-  {
-    "slug": "5 star",
-    "name": "5 Star",
-    "category": "Web",
-    "kind": "browser",
-    "domain": "5startransport.com.ng",
-    "description": "A leader in eco-friendly fleet management and urban transportation",
-    "stack": [
-      "Next.js",
-      "React-Native",
-      "GraphQL"
-    ],
-    "year": "2025",
-    "screenshots": [
-      { "src": "/portfolio/projects/5star/marketing.webp", "label": "Marketing", "kind": "browser" },
-      { "src": "/portfolio/projects/5star/services.webp", "label": "Services", "kind": "browser" },
-      { "src": "/portfolio/projects/5star/value.webp", "label": "Values", "kind": "browser" },
-      { "src": "/portfolio/projects/5star/credit.webp", "label": "Credit", "kind": "browser" },
-      { "src": "/portfolio/projects/5star/get-started.webp", "label": "Get Started", "kind": "browser" },
-      { "src": "/portfolio/projects/5star/feedback.webp", "label": "Feedback", "kind": "browser" }
     ]
   },
   {
