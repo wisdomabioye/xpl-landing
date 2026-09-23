@@ -15,17 +15,19 @@ import inquiryOptionsJson from "@content/inquiry-options.json";
 import systemsJson from "@content/systems.json";
 import productRescueJson from "@content/product-rescue.json";
 import caseStudiesJson from "@content/case-studies.json";
-import { validateCaseStudies } from "@/config/content-validation";
+import offersJson from "@content/offers.json";
+import engagementModelsJson from "@content/engagement-models.json";
+import { validateCaseStudies, validateEngagementModels, validateOffers } from "@/config/content-validation";
 
 export type {
   CaseStudy,
+  EngagementModel,
+  Offer,
   CaseStudyPermission,
   CaseStudySeo,
-  EngagementModel,
   EngagementModelId,
   EvidenceStatus,
   FaqItem,
-  Offer,
   Outcome,
   OutcomeKind,
   ProofItem,
@@ -225,8 +227,14 @@ export const inquiryOptions: readonly InquiryOption[] = inquiryOptionsJson;
 export const systems = systemsJson as readonly DesignSystem[];
 export const productRescue: ProductRescueContent = productRescueJson;
 export const caseStudies = validateCaseStudies(caseStudiesJson);
+export const offers = validateOffers(offersJson);
+export const engagementModels = validateEngagementModels(engagementModelsJson);
 
 export const projectCategories: ProjectCategory[] = ["Web", "Mobile", "Web3"];
+
+export function getOfferBySlug(slug: string) {
+  return offers.find((offer) => offer.slug === slug);
+}
 
 export function getSystemBySlug(slug: string): DesignSystem | undefined {
   return systems.find((s) => s.slug === slug);

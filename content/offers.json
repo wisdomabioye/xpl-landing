@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "agency-partner",
+    "name": "Agency Partner",
+    "summary": "Senior delivery capacity for agencies that need dependable product engineering behind their client relationships.",
+    "scope": [
+      "White-label or named delivery under agreed operating terms",
+      "Web, mobile, backend, and Web3 product engineering",
+      "Defined projects or embedded monthly support",
+      "Technical planning, implementation, verification, and handover",
+      "Direct client communication only when the partner approves it"
+    ],
+    "exclusions": [
+      "Unbounded on-call availability or 24/7 response",
+      "Work started without an agreed scope, access, and decision owner",
+      "Direct solicitation of the agency's client relationships",
+      "Formal security, penetration, or compliance certification",
+      "Silent expansion beyond the approved project or monthly capacity"
+    ],
+    "duration": "Project-based or monthly embedded support",
+    "deliverables": [
+      "An agreed delivery plan and working rhythm",
+      "Production implementation within the approved scope",
+      "Progress visibility, risk escalation, and decision records",
+      "Verification evidence and a clean technical handover"
+    ],
+    "faq": [
+      {
+        "question": "Can XPL work under our agency brand?",
+        "answer": "Yes. White-label delivery is available under written confidentiality, ownership, communication, and non-solicitation terms."
+      },
+      {
+        "question": "Will XPL speak directly with our client?",
+        "answer": "Only when you approve it. The agency remains the relationship owner and sets the communication model."
+      },
+      {
+        "question": "How does pricing work?",
+        "answer": "Defined projects start from ₦1,500,000 or $3,000. Embedded support starts from ₦1,200,000 per month or $2,500 per month, subject to scope and capacity."
+      },
+      {
+        "question": "Who owns the delivered work?",
+        "answer": "The written engagement terms define ownership, licensing, third-party components, and handover. Client-specific work is transferred as agreed after payment."
+      }
+    ],
+    "cta": {
+      "label": "Discuss agency support",
+      "to": "/contact?interest=agency-partner"
+    }
+  }
+]

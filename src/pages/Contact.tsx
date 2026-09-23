@@ -70,10 +70,13 @@ export function Contact() {
   const requestedInterest = searchParams.get("interest") ?? "";
   const initialService =
     inquiryOptions.find((option) => option.value === requestedInterest)?.label ?? "";
-  const [form, setForm] = useState<ContactPayload>({ ...initialForm, service: initialService });
+  const [form, setForm] = useState<ContactPayload>(initialForm);
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
-  const channels = useMemo(buildChannels, []);
+  const channels = useMemo(() => buildChannels(), []);
+
+
+  const selectedService = form.service || initialService;
 
   const update =
     <K extends keyof ContactPayload>(k: K) =>
@@ -84,7 +87,7 @@ export function Contact() {
     e.preventDefault();
     setStatus("sending");
     setErrorMsg("");
-    const result = await sendContactBrief(form);
+    const result = await sendContactBrief({ ...form, service: selectedService });
     if (result.ok) {
       setStatus("success");
       setForm(initialForm);
@@ -362,7 +365,7 @@ export function Contact() {
                     className="select"
                     required
                     aria-required="true"
-                    value={form.service}
+                    value={selectedService}
                     onChange={update("service")}
                   >
                     <option value="">Select an engagement…</option>

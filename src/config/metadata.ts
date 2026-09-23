@@ -35,6 +35,16 @@ const pages: Readonly<Record<string, PageMetadata>> = {
     description: "Explore evidence-backed web, mobile, and Web3 product case studies from XPL Developers.",
     path: "/work",
   },
+  "/agency-partner": {
+    title: "White-label Agency Development Partner | XPL Developers",
+    description: "Add dependable web, mobile, backend, and Web3 engineering capacity while keeping your agency in control of the client relationship.",
+    path: "/agency-partner",
+  },
+  "/engagements": {
+    title: "Software Development Engagements | XPL Developers",
+    description: "Compare Product Rescue, agency support, full product builds, and maintenance engagements from XPL Developers.",
+    path: "/engagements",
+  },
   "/product-rescue": {
     title: "Product Rescue for SaaS & Digital Products | XPL Developers",
     description: "Stabilize a troubled SaaS or digital product with a focused technical assessment, agreed critical correction, and prioritized recovery roadmap.",

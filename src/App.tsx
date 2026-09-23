@@ -10,6 +10,8 @@ import { Contact } from "@/pages/Contact";
 import { Privacy } from "@/pages/Privacy";
 import { Terms } from "@/pages/Terms";
 import { ProductRescue } from "@/pages/ProductRescue";
+import { AgencyPartner } from "@/pages/AgencyPartner";
+import { Engagements } from "@/pages/Engagements";
 import { CaseStudyPage } from "@/pages/CaseStudy";
 import { NotFound } from "@/pages/NotFound";
 
@@ -25,6 +27,8 @@ const router = createBrowserRouter([
       { path: "/work/:slug", element: <CaseStudyPage /> },
       { path: "/systems/:slug", element: <SystemShowcase /> },
       { path: "/product-rescue", element: <ProductRescue /> },
+      { path: "/agency-partner", element: <AgencyPartner /> },
+      { path: "/engagements", element: <Engagements /> },
       { path: "/contact", element: <Contact /> },
       { path: "/privacy", element: <Privacy /> },
       { path: "/terms", element: <Terms /> },

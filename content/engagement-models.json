@@ -1,0 +1,38 @@
+[
+  {
+    "id": "product-rescue",
+    "name": "Product Rescue",
+    "summary": "A bounded assessment or sprint for a live product blocked by instability, delivery risk, or a difficult handover.",
+    "idealFor": ["Recurring product failures", "A stalled roadmap", "A fragile release process"],
+    "workingRhythm": "3–5 business-day assessment or a 10-business-day rescue sprint",
+    "startingPrice": "From ₦450,000 / $750",
+    "cta": { "label": "Explore Product Rescue", "to": "/product-rescue" }
+  },
+  {
+    "id": "agency-partner",
+    "name": "Agency Partner",
+    "summary": "White-label, overflow, or embedded engineering support that protects the agency's client relationship.",
+    "idealFor": ["Delivery overflow", "Missing specialist capacity", "A dependable technical partner"],
+    "workingRhythm": "Defined projects or reserved monthly capacity",
+    "startingPrice": "Projects from ₦1.5m / $3k",
+    "cta": { "label": "Explore Agency Partner", "to": "/agency-partner" }
+  },
+  {
+    "id": "full-build",
+    "name": "Full Product Build",
+    "summary": "End-to-end engineering for a new web, mobile, backend, or Web3 product with a clear product owner.",
+    "idealFor": ["A validated product direction", "A new MVP or platform", "A rebuild with approved scope"],
+    "workingRhythm": "Milestone-based discovery, build, verification, and handover",
+    "startingPrice": "From ₦3.5m / $7.5k",
+    "cta": { "label": "Discuss a product build", "to": "/contact?interest=new-product-build" }
+  },
+  {
+    "id": "maintenance",
+    "name": "Maintenance & Stabilization",
+    "summary": "Planned product care after launch, covering agreed fixes, upgrades, monitoring, and delivery support.",
+    "idealFor": ["A product already in use", "A known maintenance backlog", "Teams needing ongoing technical ownership"],
+    "workingRhythm": "Monthly retained capacity with an agreed queue and response model",
+    "startingPrice": "From ₦600k / $1.25k monthly",
+    "cta": { "label": "Discuss maintenance", "to": "/contact?interest=maintenance-support" }
+  }
+]

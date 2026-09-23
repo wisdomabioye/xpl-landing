@@ -114,7 +114,7 @@
     },
     "cta": {
       "label": "Discuss your web product",
-      "to": "/contact?interest=full-build"
+      "to": "/contact?interest=new-product-build"
     }
   },
   {
@@ -236,7 +236,7 @@
     },
     "cta": {
       "label": "Discuss your Web3 product",
-      "to": "/contact?interest=web3"
+      "to": "/contact?interest=web3-blockchain"
     }
   },
   {
@@ -359,7 +359,7 @@
     },
     "cta": {
       "label": "Discuss your digital product",
-      "to": "/contact?interest=full-build"
+      "to": "/contact?interest=new-product-build"
     }
   }
 ]

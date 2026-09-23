@@ -183,3 +183,45 @@ export function validateCaseStudies(value: unknown): readonly CaseStudy[] {
   }
   return records;
 }
+
+const engagementIds = ["product-rescue", "agency-partner", "full-build", "maintenance"] as const;
+
+export function validateOffers(value: unknown): readonly import("@/config/content-models").Offer[] {
+  const records = array(value, "offers", (item, path) => {
+    const record = object(item, path);
+    const cta = object(record.cta, `${path}.cta`);
+    return {
+      slug: string(record.slug, `${path}.slug`),
+      name: string(record.name, `${path}.name`),
+      summary: string(record.summary, `${path}.summary`),
+      scope: stringList(record.scope, `${path}.scope`),
+      exclusions: stringList(record.exclusions, `${path}.exclusions`),
+      duration: string(record.duration, `${path}.duration`),
+      deliverables: stringList(record.deliverables, `${path}.deliverables`),
+      faq: array(record.faq, `${path}.faq`, faq),
+      cta: { label: string(cta.label, `${path}.cta.label`), to: string(cta.to, `${path}.cta.to`) },
+    };
+  });
+  const slugs = new Set(records.map((record) => record.slug));
+  if (slugs.size !== records.length) fail("offers", "slugs must be unique");
+  return records;
+}
+
+export function validateEngagementModels(value: unknown): readonly import("@/config/content-models").EngagementModel[] {
+  const records = array(value, "engagementModels", (item, path) => {
+    const record = object(item, path);
+    const cta = object(record.cta, `${path}.cta`);
+    return {
+      id: member(record.id, engagementIds, `${path}.id`),
+      name: string(record.name, `${path}.name`),
+      summary: string(record.summary, `${path}.summary`),
+      idealFor: stringList(record.idealFor, `${path}.idealFor`),
+      workingRhythm: string(record.workingRhythm, `${path}.workingRhythm`),
+      startingPrice: optionalString(record.startingPrice, `${path}.startingPrice`),
+      cta: { label: string(cta.label, `${path}.cta.label`), to: string(cta.to, `${path}.cta.to`) },
+    };
+  });
+  const ids = new Set(records.map((record) => record.id));
+  if (ids.size !== records.length) fail("engagementModels", "ids must be unique");
+  return records;
+}

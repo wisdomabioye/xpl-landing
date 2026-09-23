@@ -3,6 +3,7 @@ import { Page } from "@/components/ui/Page";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { CTABanner } from "@/components/sections/CTABanner";
+import { EngagementCrossSell } from "@/components/sections/EngagementCrossSell";
 import { OfferCardGrid } from "@/components/sections/OfferCardGrid";
 import { PricingCards } from "@/components/sections/PricingCards";
 import { PageHero } from "@/components/sections/PageHero";
@@ -61,7 +62,7 @@ export function ProductRescue() {
 
   return (
     <Page>
-      <PageHero {...hero} />
+      <PageHero {...hero} proof={["3–5 day assessment", "10-day rescue sprint", "One concurrent sprint"]} />
       <section className="section" style={{ background: "var(--color-bg-soft)" }}>
         <div className="wrap">
           <SectionHeading {...overview} />
@@ -101,6 +102,7 @@ export function ProductRescue() {
           </Reveal>
         </div>
       </section>
+      <EngagementCrossSell exclude="product-rescue" />
       <CTABanner title={cta.title} body={cta.body} primaryLabel={cta.label} primaryTo={cta.to} />
     </Page>
   );

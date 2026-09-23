@@ -11,6 +11,7 @@ interface PageHeroProps {
   intro: string;
   primaryCta?: CtaLink;
   secondaryCta?: CtaLink;
+  proof?: readonly string[];
 }
 
 export function PageHero({
@@ -20,6 +21,7 @@ export function PageHero({
   intro,
   primaryCta,
   secondaryCta,
+  proof,
 }: PageHeroProps) {
   return (
     <section
@@ -54,6 +56,13 @@ export function PageHero({
             {intro}
           </p>
         </Reveal>
+        {proof && proof.length > 0 && (
+          <Reveal delay={220}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 28px", marginTop: 30, paddingTop: 22, borderTop: "1px solid var(--color-rule)", color: "var(--color-muted-2)", fontFamily: "var(--font-mono)", fontSize: 10, letterSpacing: "0.1em", textTransform: "uppercase" }}>
+              {proof.map((item) => <span key={item}>— {item}</span>)}
+            </div>
+          </Reveal>
+        )}
         {(primaryCta || secondaryCta) && (
           <Reveal delay={240}>
             <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginTop: 36 }}>
