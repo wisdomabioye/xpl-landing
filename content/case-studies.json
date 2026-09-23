@@ -1,0 +1,365 @@
+[
+  {
+    "slug": "docket",
+    "projectSlug": "docket",
+    "publicationState": "published",
+    "name": "Docket",
+    "category": "Web",
+    "summary": "A focused web product that brings AI-assisted case preparation into a workflow designed for U.S. immigration attorneys.",
+    "clientProblem": "Immigration case preparation involves gathering and working through substantial case information. Docket needed a focused product experience that presented its purpose clearly and gave attorneys a structured place to work through case preparation.",
+    "xplRole": "XPL provided product engineering for Docket's web experience, translating the product direction into the marketing, partnership, and case-workspace interfaces represented in the approved project material.",
+    "services": [
+      "Product engineering",
+      "Web application development",
+      "AI product integration",
+      "Interface implementation"
+    ],
+    "timeline": "2026",
+    "stack": [
+      "Next.js",
+      "tRPC",
+      "Perplexity"
+    ],
+    "deliverables": [
+      "A public-facing marketing experience explaining Docket's purpose",
+      "A partnership experience for firms and collaborators",
+      "A case-preparation workspace for the product's core workflow",
+      "Connected web application interfaces built around the approved product direction"
+    ],
+    "approach": [
+      "Clarified the product around a specific professional workflow instead of presenting AI as a general-purpose feature.",
+      "Separated public product communication, partnership information, and authenticated case work into distinct interfaces.",
+      "Implemented the experience with Next.js and tRPC, with Perplexity supporting the product's AI-assisted workflow.",
+      "Kept the interface focused on usable case preparation rather than exposing underlying technical complexity to the user."
+    ],
+    "proof": [
+      {
+        "label": "Product surfaces",
+        "value": "Marketing, partnership, and case-workspace interfaces",
+        "status": "verified",
+        "source": "Approved Docket screenshots retained in the XPL portfolio"
+      },
+      {
+        "label": "Delivered stack",
+        "value": "Next.js, tRPC, and Perplexity",
+        "status": "verified",
+        "source": "XPL project record and owner confirmation"
+      },
+      {
+        "label": "Business impact",
+        "value": "No numeric claim published",
+        "status": "restricted"
+      }
+    ],
+    "outcomes": [
+      {
+        "kind": "qualitative",
+        "statement": "Docket has a cohesive web experience spanning product communication, partnership information, and its case-preparation workspace.",
+        "source": "Approved Docket product screenshots and XPL owner confirmation"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/portfolio/projects/docket/marketing.webp",
+        "label": "Docket marketing page introducing its immigration case-preparation product",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/docket/partnership.webp",
+        "label": "Docket partnership page displayed in a desktop browser",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/docket/case.webp",
+        "label": "Docket case-preparation workspace displayed in a desktop browser",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/docket/case2.webp",
+        "label": "A second view of the Docket case-preparation workspace",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/docket/case3.webp",
+        "label": "A third view of the Docket case-preparation workspace",
+        "kind": "browser"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What did XPL deliver for Docket?",
+        "answer": "XPL provided product engineering across the marketing, partnership, and case-workspace experiences represented in this case study."
+      },
+      {
+        "question": "Does this case study claim measured business results?",
+        "answer": "No. XPL is publishing the delivered product scope and a qualitative outcome, not unsupported performance, revenue, or time-saving metrics."
+      }
+    ],
+    "domain": "trydocketapp.com",
+    "permission": {
+      "approvedAt": "2026-09-23",
+      "approvalReference": "Publication approval confirmed by the project owner to XPL",
+      "name": true,
+      "domain": true,
+      "screenshots": true,
+      "roleAndDeliverables": true,
+      "stack": true,
+      "outcomes": true,
+      "testimonial": false
+    },
+    "seo": {
+      "title": "Docket Immigration Case-Preparation Platform | XPL Developers",
+      "description": "See how XPL engineered Docket's web experience for AI-assisted immigration case preparation, from product communication to the case workspace.",
+      "shareImage": "/portfolio/projects/docket/marketing.webp"
+    },
+    "cta": {
+      "label": "Discuss your web product",
+      "to": "/contact?interest=full-build"
+    }
+  },
+  {
+    "slug": "tenda",
+    "projectSlug": "tenda",
+    "publicationState": "published",
+    "name": "Tenda",
+    "category": "Web3",
+    "summary": "A multi-surface marketplace product for escrow-backed gigs and peer-to-peer cash trades involving people and AI agents.",
+    "clientProblem": "Tenda needed to make a blockchain-backed marketplace understandable across several connected actions: discovering work, reviewing a gig, managing a wallet, and following activity from a dashboard.",
+    "xplRole": "XPL provided product engineering across Tenda's marketplace experience, translating the product model into connected marketing, wallet, gig-discovery, gig-detail, and dashboard interfaces.",
+    "services": [
+      "Product engineering",
+      "Web3 application development",
+      "Marketplace interface implementation",
+      "Wallet and transaction-flow integration"
+    ],
+    "timeline": "2026",
+    "stack": [
+      "Solidity",
+      "Celo",
+      "Base",
+      "0g",
+      "Solana",
+      "Anchor",
+      "React Native"
+    ],
+    "deliverables": [
+      "A public-facing product experience explaining the marketplace",
+      "Wallet interfaces supporting the product journey",
+      "Gig discovery and gig-detail experiences",
+      "A dashboard bringing marketplace activity into one interface"
+    ],
+    "approach": [
+      "Organized the experience around recognizable marketplace actions rather than exposing blockchain complexity first.",
+      "Separated discovery, gig detail, wallet activity, and account oversight into clear product surfaces.",
+      "Implemented interfaces for the product's escrow-backed workflow across its recorded blockchain and application stack.",
+      "Kept transaction context visible where users need to understand the state of marketplace activity."
+    ],
+    "proof": [
+      {
+        "label": "Product surfaces",
+        "value": "Marketing, wallet, gig, browse, and dashboard interfaces",
+        "status": "verified",
+        "source": "Approved Tenda screenshots retained in the XPL portfolio"
+      },
+      {
+        "label": "Product model",
+        "value": "Escrow-backed gigs and peer-to-peer cash trades",
+        "status": "verified",
+        "source": "Approved Tenda product record and owner confirmation"
+      },
+      {
+        "label": "Commercial impact",
+        "value": "No numeric claim published",
+        "status": "restricted"
+      }
+    ],
+    "outcomes": [
+      {
+        "kind": "qualitative",
+        "statement": "Tenda has a cohesive marketplace experience connecting product communication, gig discovery, wallet context, and account activity.",
+        "source": "Approved Tenda product screenshots and owner confirmation"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/portfolio/projects/tenda/marketing.webp",
+        "label": "Tenda marketing page introducing its escrow-backed marketplace",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/tenda/wallet.webp",
+        "label": "Tenda wallet interface displayed in a desktop browser",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/tenda/gig.webp",
+        "label": "Tenda gig-detail interface displayed in a desktop browser",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/tenda/browse-gig.webp",
+        "label": "Tenda marketplace interface for browsing available gigs",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/tenda/dashboard.webp",
+        "label": "Tenda account dashboard displayed in a desktop browser",
+        "kind": "browser"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What did XPL deliver for Tenda?",
+        "answer": "XPL provided product engineering across the marketing, marketplace, wallet, gig, and dashboard experiences represented in this case study."
+      },
+      {
+        "question": "Does this case study claim transaction volume or adoption results?",
+        "answer": "No. It documents the approved delivery scope and a qualitative product outcome without unsupported commercial or usage metrics."
+      }
+    ],
+    "domain": "tendahq.com",
+    "permission": {
+      "approvedAt": "2026-09-23",
+      "approvalReference": "Publication approval confirmed by the project owner to XPL",
+      "name": true,
+      "domain": true,
+      "screenshots": true,
+      "roleAndDeliverables": true,
+      "stack": true,
+      "outcomes": true,
+      "testimonial": false
+    },
+    "seo": {
+      "title": "Tenda Web3 Marketplace Case Study | XPL Developers",
+      "description": "See how XPL engineered Tenda's marketplace experience across gig discovery, wallet context, escrow-backed workflows, and account activity.",
+      "shareImage": "/portfolio/projects/tenda/marketing.webp"
+    },
+    "cta": {
+      "label": "Discuss your Web3 product",
+      "to": "/contact?interest=web3"
+    }
+  },
+  {
+    "slug": "5-star",
+    "projectSlug": "5-star",
+    "publicationState": "published",
+    "name": "5 Star",
+    "category": "Web",
+    "summary": "A connected digital experience for a transportation business spanning service communication, customer onboarding, credit, and feedback.",
+    "clientProblem": "5 Star needed a clearer digital path for presenting its transportation services and guiding customers through important interactions beyond the initial marketing message.",
+    "xplRole": "XPL provided product engineering across 5 Star's customer-facing web experience, turning the approved service model into connected marketing, service, onboarding, credit, and feedback interfaces.",
+    "services": [
+      "Product engineering",
+      "Web application development",
+      "Customer journey implementation",
+      "Interface development"
+    ],
+    "timeline": "2025",
+    "stack": [
+      "Next.js",
+      "React Native",
+      "GraphQL"
+    ],
+    "deliverables": [
+      "A public-facing marketing experience for the transportation business",
+      "Service and company-value presentation interfaces",
+      "Customer onboarding and credit-related interfaces",
+      "A feedback experience supporting the customer journey"
+    ],
+    "approach": [
+      "Structured the public experience around the services and decisions most relevant to prospective customers.",
+      "Connected company positioning with practical next steps rather than treating the site as a standalone brochure.",
+      "Implemented customer-facing interfaces for onboarding, credit, and feedback alongside the marketing experience.",
+      "Used a shared product direction across the recorded web, mobile, and API stack."
+    ],
+    "proof": [
+      {
+        "label": "Product surfaces",
+        "value": "Marketing, services, values, credit, onboarding, and feedback interfaces",
+        "status": "verified",
+        "source": "Approved 5 Star screenshots retained in the XPL portfolio"
+      },
+      {
+        "label": "Delivered stack",
+        "value": "Next.js, React Native, and GraphQL",
+        "status": "verified",
+        "source": "Approved 5 Star project record and owner confirmation"
+      },
+      {
+        "label": "Operational impact",
+        "value": "No numeric claim published",
+        "status": "restricted"
+      }
+    ],
+    "outcomes": [
+      {
+        "kind": "qualitative",
+        "statement": "5 Star has a cohesive customer-facing experience connecting service communication with onboarding, credit, and feedback interactions.",
+        "source": "Approved 5 Star product screenshots and owner confirmation"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/portfolio/projects/5star/marketing.webp",
+        "label": "5 Star transportation marketing page displayed in a desktop browser",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/5star/services.webp",
+        "label": "5 Star services page describing transportation offerings",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/5star/value.webp",
+        "label": "5 Star website section describing company values",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/5star/credit.webp",
+        "label": "5 Star customer credit interface displayed in a desktop browser",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/5star/get-started.webp",
+        "label": "5 Star customer onboarding interface displayed in a desktop browser",
+        "kind": "browser"
+      },
+      {
+        "src": "/portfolio/projects/5star/feedback.webp",
+        "label": "5 Star customer feedback interface displayed in a desktop browser",
+        "kind": "browser"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What did XPL deliver for 5 Star?",
+        "answer": "XPL provided product engineering across the marketing, service, onboarding, credit, and feedback experiences represented in this case study."
+      },
+      {
+        "question": "Does this case study claim fleet, revenue, or environmental results?",
+        "answer": "No. It documents the approved product scope and a qualitative outcome without unsupported operational, commercial, or environmental metrics."
+      }
+    ],
+    "domain": "5startransport.com.ng",
+    "permission": {
+      "approvedAt": "2026-09-23",
+      "approvalReference": "Publication approval confirmed by the project owner to XPL",
+      "name": true,
+      "domain": true,
+      "screenshots": true,
+      "roleAndDeliverables": true,
+      "stack": true,
+      "outcomes": true,
+      "testimonial": false
+    },
+    "seo": {
+      "title": "5 Star Transportation Product Case Study | XPL Developers",
+      "description": "See how XPL engineered 5 Star's customer-facing transportation experience across services, onboarding, credit, and feedback.",
+      "shareImage": "/portfolio/projects/5star/marketing.webp"
+    },
+    "cta": {
+      "label": "Discuss your digital product",
+      "to": "/contact?interest=full-build"
+    }
+  }
+]

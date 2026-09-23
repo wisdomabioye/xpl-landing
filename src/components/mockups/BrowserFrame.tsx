@@ -1,9 +1,9 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 interface Props {
   title?: string;
   caption?: string;
-  height?: number;
+  height?: CSSProperties["height"];
   children?: ReactNode;
   image?: string;
   imageAlt?: string;

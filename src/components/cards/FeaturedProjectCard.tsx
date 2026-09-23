@@ -4,13 +4,14 @@ import { Icon } from "@/components/ui/Icon";
 import { BrowserFrame } from "@/components/mockups/BrowserFrame";
 import { PhoneFrame } from "@/components/mockups/PhoneFrame";
 import { Link } from "react-router-dom";
-import type { Project } from "@/config/content";
+import { getCaseStudyBySlug, type Project } from "@/config/content";
 
 // Matches ProjectCard so featured and portfolio cards share preview height.
 const PREVIEW_HEIGHT = 280;
 
 export function FeaturedProjectCard({ project, eager = false }: { project: Project; eager?: boolean }) {
   const cover = project.image ?? project.screenshots?.[0]?.src;
+  const caseStudy = getCaseStudyBySlug(project.slug);
   return (
     <Card style={{ padding: 0, overflow: "hidden", height: "100%", display: "flex", flexDirection: "column" }}>
       <div style={{ padding: 16, paddingBottom: 0 }}>
@@ -54,7 +55,7 @@ export function FeaturedProjectCard({ project, eager = false }: { project: Proje
           {project.description}
         </p>
         <Link
-          to="/portfolio"
+          to={caseStudy ? "/work/" + caseStudy.slug : "/portfolio"}
           style={{
             marginTop: "auto",
             padding: 0,

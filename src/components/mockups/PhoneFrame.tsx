@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 export function PhoneFrame({
   caption,
@@ -9,7 +9,7 @@ export function PhoneFrame({
   eager = false,
 }: {
   caption?: string;
-  height?: number;
+  height?: CSSProperties["height"];
   children?: ReactNode;
   image?: string;
   imageAlt?: string;

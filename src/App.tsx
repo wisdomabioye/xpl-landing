@@ -4,11 +4,13 @@ import { Home } from "@/pages/Home";
 import { About } from "@/pages/About";
 import { Services } from "@/pages/Services";
 import { Portfolio } from "@/pages/Portfolio";
+import { Work } from "@/pages/Work";
 import { SystemShowcase } from "@/pages/SystemShowcase";
 import { Contact } from "@/pages/Contact";
 import { Privacy } from "@/pages/Privacy";
 import { Terms } from "@/pages/Terms";
 import { ProductRescue } from "@/pages/ProductRescue";
+import { CaseStudyPage } from "@/pages/CaseStudy";
 import { NotFound } from "@/pages/NotFound";
 
 const router = createBrowserRouter([
@@ -19,6 +21,8 @@ const router = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/services", element: <Services /> },
       { path: "/portfolio", element: <Portfolio /> },
+      { path: "/work", element: <Work /> },
+      { path: "/work/:slug", element: <CaseStudyPage /> },
       { path: "/systems/:slug", element: <SystemShowcase /> },
       { path: "/product-rescue", element: <ProductRescue /> },
       { path: "/contact", element: <Contact /> },

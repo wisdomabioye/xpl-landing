@@ -547,6 +547,12 @@ body::before {
 }
 .scroll-bounce { animation: scrollBounce 1.6s ease-in-out infinite; }
 
+/* case-study editorial layouts */
+@media (max-width: 760px) {
+  .case-study-split,
+  .case-study-note { grid-template-columns: 1fr !important; }
+}
+
 /* reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }

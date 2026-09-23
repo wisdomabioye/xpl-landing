@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/Card";
 import { Pill } from "@/components/ui/Pill";
 import { Icon } from "@/components/ui/Icon";
 import { Lightbox } from "@/components/ui/Lightbox";
 import { BrowserFrame } from "@/components/mockups/BrowserFrame";
 import { PhoneFrame } from "@/components/mockups/PhoneFrame";
-import type { Project, Screenshot } from "@/config/content";
+import { getCaseStudyBySlug, type Project, type Screenshot } from "@/config/content";
 
 // Fixed preview-area height so browser and phone cards line up.
 // Frame heights are tuned so chrome + screen fits just inside the box.
@@ -13,6 +14,7 @@ const PREVIEW_HEIGHT = 280;
 
 export function ProjectCard({ project, eager = false }: { project: Project; eager?: boolean }) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const caseStudy = getCaseStudyBySlug(project.slug);
 
   // Legacy single `image` participates as the first screenshot when no
   // dedicated list exists yet.
@@ -132,7 +134,22 @@ export function ProjectCard({ project, eager = false }: { project: Project; eage
             <Pill key={t}>{t}</Pill>
           ))}
         </div>
-        {project.url ? (
+        {caseStudy ? (
+          <Link
+            to={"/work/" + caseStudy.slug}
+            style={{
+              marginTop: "auto",
+              paddingTop: 16,
+              color: "var(--color-accent)",
+              fontSize: 13,
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 6,
+            }}
+          >
+            Read case study <Icon name="arrow-right" size={14} />
+          </Link>
+        ) : project.url ? (
           <a
             href={project.url}
             target="_blank"

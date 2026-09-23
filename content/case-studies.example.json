@@ -1,0 +1,99 @@
+[
+  {
+    "slug": "sample-project",
+    "projectSlug": "docket",
+    "publicationState": "draft",
+    "name": "Sample project — replace before publishing",
+    "category": "Web",
+    "summary": "A short, factual summary of the product and the work XPL was approved to discuss.",
+    "clientProblem": "Describe the client's situation before the engagement. State the problem without exaggerating its effect or revealing restricted information.",
+    "xplRole": "Explain exactly what XPL owned, contributed, or supported. Do not imply responsibility for work completed by another team.",
+    "services": [
+      "Product engineering",
+      "Technical delivery"
+    ],
+    "timeline": "January–March 2026",
+    "stack": [
+      "Next.js",
+      "TypeScript"
+    ],
+    "deliverables": [
+      "Name a concrete deliverable accepted by the client",
+      "Name another concrete deliverable"
+    ],
+    "approach": [
+      "Explain the first meaningful delivery step",
+      "Explain how the team implemented and verified the work",
+      "Explain how XPL handed over or supported release"
+    ],
+    "proof": [
+      {
+        "label": "Delivered scope",
+        "value": "Describe a verifiable fact, not a marketing conclusion",
+        "status": "verified",
+        "source": "Link or reference to retained acceptance evidence"
+      },
+      {
+        "label": "Restricted detail",
+        "value": "Details available on request",
+        "status": "restricted"
+      }
+    ],
+    "outcomes": [
+      {
+        "kind": "qualitative",
+        "statement": "State an approved qualitative result when no defensible number exists.",
+        "source": "Client approval, acceptance record, or another retained source"
+      },
+      {
+        "kind": "metric",
+        "statement": "Explain what changed without implying unsupported causation.",
+        "source": "Analytics report or approved client record",
+        "metric": {
+          "value": "Example: 40%",
+          "baseline": "Define the previous measurement and calculation",
+          "period": "Define the dates or comparison window"
+        }
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/portfolio/projects/docket/marketing.webp",
+        "label": "Describe what is visibly shown in this screenshot",
+        "kind": "browser"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What did XPL deliver?",
+        "answer": "Give a concise answer supported by the approved project record."
+      }
+    ],
+    "testimonial": {
+      "quote": "Insert only the client's exact approved wording.",
+      "person": "Approved client name",
+      "role": "Approved client role"
+    },
+    "domain": "example.com",
+    "permission": {
+      "approvedAt": "2026-01-01",
+      "approvalReference": "Link or reference to retained written approval",
+      "name": false,
+      "domain": false,
+      "screenshots": false,
+      "roleAndDeliverables": false,
+      "stack": false,
+      "outcomes": false,
+      "testimonial": false
+    },
+    "seo": {
+      "title": "Approved case-study title | XPL Developers",
+      "description": "An accurate search description of the approved engagement and outcome.",
+      "shareImage": "/portfolio/projects/docket/marketing.webp"
+    },
+    "cta": {
+      "label": "Discuss a similar project",
+      "to": "/contact?interest=full-build"
+    }
+  }
+]

@@ -1,4 +1,4 @@
-import { getSystemBySlug } from "@/config/content";
+import { getCaseStudyBySlug, getSystemBySlug } from "@/config/content";
 import { site } from "@/config/site";
 
 export interface PageMetadata {
@@ -6,6 +6,7 @@ export interface PageMetadata {
   description: string;
   path: string;
   robots?: "index, follow" | "noindex, follow";
+  image?: string;
 }
 
 const pages: Readonly<Record<string, PageMetadata>> = {
@@ -28,6 +29,11 @@ const pages: Readonly<Record<string, PageMetadata>> = {
     title: "Web, Mobile & Web3 Portfolio | XPL Developers",
     description: "See selected web, mobile, Web3, and design-system work engineered by XPL Developers.",
     path: "/portfolio",
+  },
+  "/work": {
+    title: "Software Product Case Studies | XPL Developers",
+    description: "Explore evidence-backed web, mobile, and Web3 product case studies from XPL Developers.",
+    path: "/work",
   },
   "/product-rescue": {
     title: "Product Rescue for SaaS & Digital Products | XPL Developers",
@@ -62,10 +68,22 @@ export function resolvePageMetadata(pathname: string): PageMetadata {
   const staticPage = pages[pathname];
   if (staticPage) return staticPage;
 
+  const caseStudyMatch = /^\/work\/([^/]+)$/.exec(pathname);
+  if (caseStudyMatch) {
+    const study = getCaseStudyBySlug(decodeURIComponent(caseStudyMatch[1]));
+    if (study) {
+      return {
+        title: study.seo.title,
+        description: study.seo.description,
+        path: `/work/${study.slug}`,
+        image: study.seo.shareImage,
+      };
+    }
+  }
+
   const systemMatch = /^\/systems\/([^/]+)$/.exec(pathname);
   if (systemMatch) {
-    const slug = decodeURIComponent(systemMatch[1]);
-    const system = getSystemBySlug(slug);
+    const system = getSystemBySlug(decodeURIComponent(systemMatch[1]));
     if (system) {
       return {
         title: `${system.name} Design System | ${site.name}`,
